@@ -1,0 +1,11 @@
+{
+  "benchmark_path": "data/benchmarks/sample_week1.json",
+  "chunks_path": "data/processed/chunks.jsonl",
+  "index_path": "data/processed/bm25_index.json",
+  "run_dir": "runs",
+  "top_k": [5, 10],
+  "retrieval_config_name": "bm25_sample",
+  "dataset_version": "sample_week1_v0",
+  "corpus_version": "sample_corpus_v0"
+}
+

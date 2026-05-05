@@ -1,0 +1,11 @@
+{
+  "benchmark_path": "data/benchmarks/financebench_week1.json",
+  "chunks_path": "data/processed/financebench_chunks.jsonl",
+  "index_path": "data/processed/bm25_financebench_index.json",
+  "run_dir": "runs",
+  "top_k": [5, 10],
+  "retrieval_config_name": "bm25_financebench_real",
+  "dataset_version": "financebench_real_week1_v0",
+  "corpus_version": "financebench_evidence_pages_v0"
+}
+

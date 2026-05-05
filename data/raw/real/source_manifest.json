@@ -1,0 +1,221 @@
+{
+  "downloaded_at": "2026-05-05T15:43:02.384929+00:00",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/patronus-ai/financebench/main/data/financebench_open_source.jsonl",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\financebench\\financebench_open_source.jsonl",
+      "bytes": 929848,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://raw.githubusercontent.com/patronus-ai/financebench/main/data/financebench_document_information.jsonl",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\financebench\\financebench_document_information.jsonl",
+      "bytes": 88781,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://www.sec.gov/files/company_tickers.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\company_tickers.json",
+      "bytes": 792870,
+      "status": 200,
+      "attempts": 1
+    }
+  ],
+  "sec_submissions": [
+    {
+      "url": "https://data.sec.gov/submissions/CIK0000789019.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0000789019.json",
+      "bytes": 184131,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0001018724.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0001018724.json",
+      "bytes": 159869,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0000104169.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0000104169.json",
+      "bytes": 157529,
+      "status": 200,
+      "attempts": 2
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0000002488.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0000002488.json",
+      "bytes": 162923,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0000200406.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0000200406.json",
+      "bytes": 154506,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0000909832.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0000909832.json",
+      "bytes": 158171,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0001065280.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0001065280.json",
+      "bytes": 161595,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0000021344.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0000021344.json",
+      "bytes": 160304,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0000077476.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0000077476.json",
+      "bytes": 162087,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0000732712.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0000732712.json",
+      "bytes": 179185,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0000012927.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0000012927.json",
+      "bytes": 147452,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0000078003.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0000078003.json",
+      "bytes": 146112,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0000024741.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0000024741.json",
+      "bytes": 157340,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0000936468.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0000936468.json",
+      "bytes": 150208,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0000064803.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0000064803.json",
+      "bytes": 158943,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0000796343.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0000796343.json",
+      "bytes": 162907,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0000066740.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0000066740.json",
+      "bytes": 160370,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0000320187.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0000320187.json",
+      "bytes": 159809,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0001512673.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0001512673.json",
+      "bytes": 157430,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0001637459.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0001637459.json",
+      "bytes": 137346,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0001410636.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0001410636.json",
+      "bytes": 169078,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0001403568.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0001403568.json",
+      "bytes": 157235,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0000040704.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0000040704.json",
+      "bytes": 157768,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0001748790.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0001748790.json",
+      "bytes": 104616,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0000764478.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0000764478.json",
+      "bytes": 146496,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0000874761.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0000874761.json",
+      "bytes": 161780,
+      "status": 200,
+      "attempts": 1
+    },
+    {
+      "url": "https://data.sec.gov/submissions/CIK0000789570.json",
+      "path": "E:\\financial_RAG_agent\\data\\raw\\real\\sec\\submissions\\CIK0000789570.json",
+      "bytes": 159373,
+      "status": 200,
+      "attempts": 1
+    }
+  ],
+  "notes": [
+    "FinanceBench is used for real benchmark QA and evidence text.",
+    "SEC company tickers and submissions metadata are downloaded from official SEC endpoints."
+  ]
+}

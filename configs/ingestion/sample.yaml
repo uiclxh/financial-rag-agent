@@ -1,0 +1,20 @@
+{
+  "raw_corpus_path": "data/raw/sample_corpus.jsonl",
+  "processed_chunks_path": "data/processed/chunks.jsonl",
+  "required_metadata": [
+    "chunk_id",
+    "document_id",
+    "company",
+    "ticker",
+    "cik",
+    "filing_type",
+    "fiscal_year",
+    "filing_date",
+    "section",
+    "page",
+    "paragraph_id",
+    "source_type",
+    "text"
+  ]
+}
+

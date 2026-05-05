@@ -1,0 +1,151 @@
+{
+  "benchmark_id": "sample_week1_v0",
+  "description": "Synthetic SEC-style Week 1 smoke benchmark for retrieval baseline development.",
+  "questions": [
+    {
+      "question_id": "q001",
+      "question": "What risks did Sample Software Works disclose in FY2023?",
+      "company": "Sample Software Works",
+      "ticker": "SSW",
+      "cik": "0000001001",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": ["risk_factor"],
+      "expected_behavior": "answer",
+      "gold_evidence": [{"evidence_id": "ev001", "chunk_id": "ssw_2023_10k_p12", "required": true, "page": 12, "section": "Item 1A. Risk Factors"}]
+    },
+    {
+      "question_id": "q002",
+      "question": "Why did Sample Software Works revenue increase in fiscal 2023?",
+      "company": "Sample Software Works",
+      "ticker": "SSW",
+      "cik": "0000001001",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": ["factual"],
+      "expected_behavior": "answer",
+      "gold_evidence": [{"evidence_id": "ev002", "chunk_id": "ssw_2023_10k_p35", "required": true, "page": 35, "section": "Item 7. Management Discussion and Analysis"}]
+    },
+    {
+      "question_id": "q003",
+      "question": "What supply chain related risk did North Lake Manufacturing disclose in FY2023?",
+      "company": "North Lake Manufacturing",
+      "ticker": "NLM",
+      "cik": "0000001002",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": ["risk_factor"],
+      "expected_behavior": "answer",
+      "gold_evidence": [{"evidence_id": "ev003", "chunk_id": "nlm_2023_10k_p14", "required": true, "page": 14, "section": "Item 1A. Risk Factors"}]
+    },
+    {
+      "question_id": "q004",
+      "question": "Did North Lake Manufacturing gross margin improve or worsen in fiscal 2023?",
+      "company": "North Lake Manufacturing",
+      "ticker": "NLM",
+      "cik": "0000001002",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": ["simple_comparison"],
+      "expected_behavior": "answer",
+      "gold_evidence": [{"evidence_id": "ev004", "chunk_id": "nlm_2023_10k_p41", "required": true, "page": 41, "section": "Item 7. Management Discussion and Analysis"}]
+    },
+    {
+      "question_id": "q005",
+      "question": "What risks did Harbor Health Clinics disclose in FY2023?",
+      "company": "Harbor Health Clinics",
+      "ticker": "HHC",
+      "cik": "0000001003",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": ["risk_factor"],
+      "expected_behavior": "answer",
+      "gold_evidence": [{"evidence_id": "ev005", "chunk_id": "hhc_2023_10k_p10", "required": true, "page": 10, "section": "Item 1A. Risk Factors"}]
+    },
+    {
+      "question_id": "q006",
+      "question": "What happened to patient visits at Harbor Health Clinics in fiscal 2023?",
+      "company": "Harbor Health Clinics",
+      "ticker": "HHC",
+      "cik": "0000001003",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": ["factual"],
+      "expected_behavior": "answer",
+      "gold_evidence": [{"evidence_id": "ev006", "chunk_id": "hhc_2023_10k_p29", "required": true, "page": 29, "section": "Item 7. Management Discussion and Analysis"}]
+    },
+    {
+      "question_id": "q007",
+      "question": "What risks did Green Grid Foods disclose in FY2023?",
+      "company": "Green Grid Foods",
+      "ticker": "GGF",
+      "cik": "0000001004",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": ["risk_factor"],
+      "expected_behavior": "answer",
+      "gold_evidence": [{"evidence_id": "ev007", "chunk_id": "ggf_2023_10k_p16", "required": true, "page": 16, "section": "Item 1A. Risk Factors"}]
+    },
+    {
+      "question_id": "q008",
+      "question": "Did Green Grid Foods net sales increase or decrease in fiscal 2023?",
+      "company": "Green Grid Foods",
+      "ticker": "GGF",
+      "cik": "0000001004",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": ["simple_comparison"],
+      "expected_behavior": "answer",
+      "gold_evidence": [{"evidence_id": "ev008", "chunk_id": "ggf_2023_10k_p38", "required": true, "page": 38, "section": "Item 7. Management Discussion and Analysis"}]
+    },
+    {
+      "question_id": "q009",
+      "question": "What risks did Urban Transit Components disclose in FY2023?",
+      "company": "Urban Transit Components",
+      "ticker": "UTC",
+      "cik": "0000001005",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": ["risk_factor"],
+      "expected_behavior": "answer",
+      "gold_evidence": [{"evidence_id": "ev009", "chunk_id": "utc_2023_10k_p13", "required": true, "page": 13, "section": "Item 1A. Risk Factors"}]
+    },
+    {
+      "question_id": "q010",
+      "question": "Why did Urban Transit Components backlog increase in fiscal 2023?",
+      "company": "Urban Transit Components",
+      "ticker": "UTC",
+      "cik": "0000001005",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": ["factual"],
+      "expected_behavior": "answer",
+      "gold_evidence": [{"evidence_id": "ev010", "chunk_id": "utc_2023_10k_p34", "required": true, "page": 34, "section": "Item 7. Management Discussion and Analysis"}]
+    },
+    {
+      "question_id": "q011",
+      "question": "What WACC did Sample Software Works disclose in its FY2023 10-K?",
+      "company": "Sample Software Works",
+      "ticker": "SSW",
+      "cik": "0000001001",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": ["valuation", "unanswerable"],
+      "expected_behavior": "refuse",
+      "gold_evidence": []
+    },
+    {
+      "question_id": "q012",
+      "question": "What was the latest market price for Green Grid Foods?",
+      "company": "Green Grid Foods",
+      "ticker": "GGF",
+      "cik": "0000001004",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": ["market_data", "unanswerable"],
+      "expected_behavior": "refuse",
+      "gold_evidence": []
+    }
+  ]
+}
+

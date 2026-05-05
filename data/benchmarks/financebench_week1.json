@@ -1,0 +1,1372 @@
+{
+  "benchmark_id": "financebench_real_week1_v0",
+  "description": "Real FinanceBench open-source subset converted to the P0 Week 1 retrieval schema.",
+  "questions": [
+    {
+      "question_id": "financebench_id_03029",
+      "question": "What is the FY2018 capital expenditure amount (in USD millions) for 3M? Give a response to the question by relying on the details shown in the cash flow statement.",
+      "company": "3M",
+      "ticker": "MMM",
+      "cik": "0000066740",
+      "filing_type": "10-K",
+      "fiscal_year": 2018,
+      "question_type": [
+        "metrics-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "$1577.00",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_03029_ev1",
+          "chunk_id": "fb_3m_2018_10k_p59_a2793f655b32",
+          "required": true,
+          "page": 59,
+          "section": "Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_04672",
+      "question": "Assume that you are a public equities analyst. Answer the following question by primarily using information that is shown in the balance sheet: what is the year end FY2018 net PPNE for 3M? Answer in USD billions.",
+      "company": "3M",
+      "ticker": "MMM",
+      "cik": "0000066740",
+      "filing_type": "10-K",
+      "fiscal_year": 2018,
+      "question_type": [
+        "metrics-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "$8.70",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_04672_ev1",
+          "chunk_id": "fb_3m_2018_10k_p57_bf48185153d4",
+          "required": true,
+          "page": 57,
+          "section": "Financial Statement Table"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00499",
+      "question": "Is 3M a capital-intensive business based on FY2022 data?",
+      "company": "3M",
+      "ticker": "MMM",
+      "cik": "0000066740",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "No, the company is managing its CAPEX and Fixed Assets pretty efficiently, which is evident from below key metrics:\nCAPEX/Revenue Ratio: 5.1%\nFixed assets/Total Assets: 20%\nReturn on Assets= 12.4%",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00499_ev1",
+          "chunk_id": "fb_3m_2022_10k_p47_670b66e4f791",
+          "required": true,
+          "page": 47,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "evidence_id": "financebench_id_00499_ev2",
+          "chunk_id": "fb_3m_2022_10k_p49_0fcdc5102f07",
+          "required": true,
+          "page": 49,
+          "section": "Balance Sheet"
+        },
+        {
+          "evidence_id": "financebench_id_00499_ev3",
+          "chunk_id": "fb_3m_2022_10k_p51_01d9404bd8c1",
+          "required": true,
+          "page": 51,
+          "section": "Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_01226",
+      "question": "What drove operating margin change as of FY2022 for 3M? If operating margin is not a useful metric for a company like this, then please state that and explain why.",
+      "company": "3M",
+      "ticker": "MMM",
+      "cik": "0000066740",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Operating Margin for 3M in FY2022 has decreased by 1.7% primarily due to: \n-Decrease in gross Margin\n-mostly one-off charges including Combat Arms Earplugs litigation, impairment related to exiting PFAS manufacturing, costs related to exiting Russia and divestiture-related restructuring\ncharges",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_01226_ev1",
+          "chunk_id": "fb_3m_2022_10k_p26_214910c54a40",
+          "required": true,
+          "page": 26,
+          "section": "Item 7. Management Discussion and Analysis"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_01865",
+      "question": "If we exclude the impact of M&A, which segment has dragged down 3M's overall growth in 2022?",
+      "company": "3M",
+      "ticker": "MMM",
+      "cik": "0000066740",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "novel-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "The consumer segment shrunk by 0.9% organically.",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_01865_ev1",
+          "chunk_id": "fb_3m_2022_10k_p24_71b863b13d1d",
+          "required": true,
+          "page": 24,
+          "section": "Segment Information"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00807",
+      "question": "Does 3M have a reasonably healthy liquidity profile based on its quick ratio for Q2 of FY2023? If the quick ratio is not relevant to measure liquidity, please state that and explain why.",
+      "company": "3M",
+      "ticker": "MMM",
+      "cik": "0000066740",
+      "filing_type": "10-Q",
+      "fiscal_year": 2023,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "No. The quick ratio for 3M was 0.96 by Jun'23 close, which needs a bit of an improvement to touch the 1x mark",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00807_ev1",
+          "chunk_id": "fb_3m_2023q2_10q_p4_76d9d88281aa",
+          "required": true,
+          "page": 4,
+          "section": "Balance Sheet"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00941",
+      "question": "Which debt securities are registered to trade on a national securities exchange under 3M's name as of Q2 of 2023?",
+      "company": "3M",
+      "ticker": "MMM",
+      "cik": "0000066740",
+      "filing_type": "10-Q",
+      "fiscal_year": 2023,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Following debt securities registered under 3M's name are listed to trade on the New York Stock Exchange:\n-1.500% Notes due 2026 (Trading Symbol: MMM26)\n-1.750% Notes due 2030 (Trading Symbol: MMM30)\n-1.500% Notes due 2031 (Trading Symbol: MMM31)",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00941_ev1",
+          "chunk_id": "fb_3m_2023q2_10q_p0_6fc1772078d3",
+          "required": true,
+          "page": 0,
+          "section": "FinanceBench Evidence Page"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_01858",
+      "question": "Does 3M maintain a stable trend of dividend distribution?",
+      "company": "3M",
+      "ticker": "MMM",
+      "cik": "0000066740",
+      "filing_type": "10-Q",
+      "fiscal_year": 2023,
+      "question_type": [
+        "novel-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Yes, not only they distribute the dividends on a routine basis, 3M has also been increasing the per share dividend for consecutive 65 years",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_01858_ev1",
+          "chunk_id": "fb_3m_2023q2_10q_p61_95bd7fd295b7",
+          "required": true,
+          "page": 61,
+          "section": "Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00438",
+      "question": "Does Adobe have an improving operating margin profile as of FY2022? If operating margin is not a useful metric for a company like this, then state that and explain why.",
+      "company": "Adobe",
+      "ticker": "ADBE",
+      "cik": "0000796343",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "No the operating margins of Adobe have recently declined from 36.8% in FY 2021 to 34.6% in FY2022. A drop by 2.2% in a year.",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00438_ev1",
+          "chunk_id": "fb_adobe_2022_10k_p53_677f0c72d316",
+          "required": true,
+          "page": 53,
+          "section": "FinanceBench Evidence Page"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00591",
+      "question": "Does Adobe have an improving Free cashflow conversion as of FY2022?",
+      "company": "Adobe",
+      "ticker": "ADBE",
+      "cik": "0000796343",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "novel-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Yes, the FCF conversion (using net income as the denominator) for Adobe has improved by ~13% from 143% in 2021 to 156% in 2022",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00591_ev1",
+          "chunk_id": "fb_adobe_2022_10k_p56_6613be4d4e05",
+          "required": true,
+          "page": 56,
+          "section": "Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_03882",
+      "question": "What is Amcor's year end FY2020 net AR (in USD millions)? Address the question by adopting the perspective of a financial analyst who can only use the details shown within the balance sheet.",
+      "company": "Amcor",
+      "ticker": "AMCR",
+      "cik": "0001748790",
+      "filing_type": "10-K",
+      "fiscal_year": 2020,
+      "question_type": [
+        "metrics-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "$1616.00",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_03882_ev1",
+          "chunk_id": "fb_amcor_2020_10k_p49_c059c4a7aa73",
+          "required": true,
+          "page": 49,
+          "section": "Balance Sheet"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00799",
+      "question": "Has AMCOR's quick ratio improved or declined between FY2023 and FY2022? If the quick ratio is not something that a financial analyst would ask about a company like this, then state that and explain why.",
+      "company": "Amcor",
+      "ticker": "AMCR",
+      "cik": "0001748790",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "The quick ratio has slightly improved from 0.67 times to 0.69 times between FY 2023 and FY 2022.(3.4% jump)",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00799_ev1",
+          "chunk_id": "fb_amcor_2023_10k_p51_452f00a718ea",
+          "required": true,
+          "page": 51,
+          "section": "Balance Sheet"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_01079",
+      "question": "What are major acquisitions that AMCOR has done in FY2023, FY2022 and FY2021?",
+      "company": "Amcor",
+      "ticker": "AMCR",
+      "cik": "0001748790",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Amcor completed these acquisitions during FY2023:\n-100% equity interest of a flexibles manufacturing company in the Czech Republic\n- 100% equity interest in a medical device packaging manufacturing site in\nShanghai, China.\n-acquisition of a New Zealand-based leading manufacturer of state-of-the-art, automated protein\npackaging machines.",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_01079_ev1",
+          "chunk_id": "fb_amcor_2023_10k_p63_8b8318fdfb48",
+          "required": true,
+          "page": 63,
+          "section": "Segment Information"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_01148",
+      "question": "What industry does AMCOR primarily operate in?",
+      "company": "Amcor",
+      "ticker": "AMCR",
+      "cik": "0001748790",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Amcor is a global leader in packaging production for various use cases.",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_01148_ev1",
+          "chunk_id": "fb_amcor_2023_10k_p4_04bf7c5785b1",
+          "required": true,
+          "page": 4,
+          "section": "FinanceBench Evidence Page"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00684",
+      "question": "Does AMCOR have an improving gross margin profile as of FY2023? If gross margin is not a useful metric for a company like this, then state that and explain why.",
+      "company": "Amcor",
+      "ticker": "AMCR",
+      "cik": "0001748790",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "No. For AMCOR there has been a slight decline in gross margins by 0.8%.",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00684_ev1",
+          "chunk_id": "fb_amcor_2023_10k_p49_c03da713f00e",
+          "required": true,
+          "page": 49,
+          "section": "FinanceBench Evidence Page"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_01936",
+      "question": "What is the nature & purpose of AMCOR's restructuring liability as oF Q2 of FY2023 close?",
+      "company": "Amcor",
+      "ticker": "AMCR",
+      "cik": "0001748790",
+      "filing_type": "10-Q",
+      "fiscal_year": 2023,
+      "question_type": [
+        "novel-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "87% of the total restructuring liability is related Employee liabilities.",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_01936_ev1",
+          "chunk_id": "fb_amcor_2023q2_10q_p14_538d1a94a654",
+          "required": true,
+          "page": 14,
+          "section": "Balance Sheet"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00222",
+      "question": "Does AMD have a reasonably healthy liquidity profile based on its quick ratio for FY22? If the quick ratio is not relevant to measure liquidity, please state that and explain why.",
+      "company": "AMD",
+      "ticker": "AMD",
+      "cik": "0000002488",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Yes. The quick ratio is 1.57, calculated as (cash and cash equivalents+Short term investments+Accounts receivable, net+receivables from related parties)/ (current liabilities).",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00222_ev1",
+          "chunk_id": "fb_amd_2022_10k_p55_24e47dcbde5d",
+          "required": true,
+          "page": 55,
+          "section": "Balance Sheet"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00995",
+      "question": "What are the major products and services that AMD sells as of FY22?",
+      "company": "AMD",
+      "ticker": "AMD",
+      "cik": "0000002488",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "AMD sells server microprocessors (CPUs) and graphics processing units (GPUs), data processing units (DPUs), Field Programmable Gate Arrays (FPGAs), and Adaptive System-on-Chip (SoC) products for data centers; CPUs, accelerated processing units (APUs) that integrate CPUs and GPUs, and chipsets for desktop and notebook personal computers; discrete GPUs, and semi-custom SoC products and development services; and embedded CPUs, GPUs, APUs, FPGAs, and Adaptive SoC products.",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00995_ev1",
+          "chunk_id": "fb_amd_2022_10k_p3_3840b3601192",
+          "required": true,
+          "page": 3,
+          "section": "Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_01198",
+      "question": "What drove revenue change as of the FY22 for AMD?",
+      "company": "AMD",
+      "ticker": "AMD",
+      "cik": "0000002488",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "In 2022, AMD reported Higher sales of their EPYC server processors, higher semi-custom product sales, and the inclusion of Xilinx embedded product sales",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_01198_ev1",
+          "chunk_id": "fb_amd_2022_10k_p42_4251da19ff97",
+          "required": true,
+          "page": 42,
+          "section": "Balance Sheet"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00917",
+      "question": "What drove operating margin change as of the FY22 for AMD? If operating margin is not a useful metric for a company like this, then please state that and explain why.",
+      "company": "AMD",
+      "ticker": "AMD",
+      "cik": "0000002488",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "The decrease in AMD's operating income was primarily driven by amortization of intangible assets associated with the Xilinx acquisition",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00917_ev1",
+          "chunk_id": "fb_amd_2022_10k_p42_4251da19ff97",
+          "required": true,
+          "page": 42,
+          "section": "Balance Sheet"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_01279",
+      "question": "Among operations, investing, and financing activities, which brought in the most (or lost the least) cash flow for AMD in FY22?",
+      "company": "AMD",
+      "ticker": "AMD",
+      "cik": "0000002488",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "In 2022, AMD brought in the most cashflow from Operations",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_01279_ev1",
+          "chunk_id": "fb_amd_2022_10k_p57_38b108954f1b",
+          "required": true,
+          "page": 57,
+          "section": "Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00563",
+      "question": "From FY21 to FY22, excluding Embedded, in which AMD reporting segment did sales proportionally increase the most?",
+      "company": "AMD",
+      "ticker": "AMD",
+      "cik": "0000002488",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "novel-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Data Center",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00563_ev1",
+          "chunk_id": "fb_amd_2022_10k_p47_6771d3ead6f2",
+          "required": true,
+          "page": 47,
+          "section": "Segment Information"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00757",
+      "question": "Did AMD report customer concentration in FY22?",
+      "company": "AMD",
+      "ticker": "AMD",
+      "cik": "0000002488",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "novel-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Yes, one customer accounted for 16% of consolidated net revenue",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00757_ev1",
+          "chunk_id": "fb_amd_2022_10k_p11_a49f188c20f9",
+          "required": true,
+          "page": 11,
+          "section": "Segment Information"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_02608",
+      "question": "In agreement with the information outlined in the income statement, what is the FY2015 - FY2017 3 year average net profit margin (as a %) for Best Buy? Answer in units of percents and round to one decimal place.",
+      "company": "Best Buy",
+      "ticker": "BBY",
+      "cik": "0000764478",
+      "filing_type": "10-K",
+      "fiscal_year": 2017,
+      "question_type": [
+        "metrics-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "2.8%",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_02608_ev1",
+          "chunk_id": "fb_bestbuy_2017_10k_p55_e4c5be7ff888",
+          "required": true,
+          "page": 55,
+          "section": "Financial Statement Table"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_04417",
+      "question": "What is the year end FY2019 total amount of inventories for Best Buy? Answer in USD millions. Base your judgments on the information provided primarily in the balance sheet.",
+      "company": "Best Buy",
+      "ticker": "BBY",
+      "cik": "0000764478",
+      "filing_type": "10-K",
+      "fiscal_year": 2019,
+      "question_type": [
+        "metrics-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "$5409.00",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_04417_ev1",
+          "chunk_id": "fb_bestbuy_2019_10k_p51_275615c43e81",
+          "required": true,
+          "page": 51,
+          "section": "Balance Sheet"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00685",
+      "question": "Are Best Buy's gross margins historically consistent (not fluctuating more than roughly 2% each year)? If gross margins are not a relevant metric for a company like this, then please state that and explain why.",
+      "company": "Best Buy",
+      "ticker": "BBY",
+      "cik": "0000764478",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Yes, the margins have been consistent, there has been a minor decline of 1.1% in gross margins between FY2022 and FY2023.",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00685_ev1",
+          "chunk_id": "fb_bestbuy_2023_10k_p39_add656db07c1",
+          "required": true,
+          "page": 39,
+          "section": "FinanceBench Evidence Page"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_01077",
+      "question": "What are major acquisitions that Best Buy has done in FY2023, FY2022 and FY2021?",
+      "company": "Best Buy",
+      "ticker": "BBY",
+      "cik": "0000764478",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Best Buy closed two acquisitions, both these companies were already partially owned by Best Buy, but Best Buy acquired all outstanding shares of these two companies during FY 2022: (1) Current Health Ltd and (2) Two Peaks, LLC d/b/a Yardbird Furniture",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_01077_ev1",
+          "chunk_id": "fb_bestbuy_2023_10k_p50_c4ce5b6bead8",
+          "required": true,
+          "page": 50,
+          "section": "Segment Information"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_01275",
+      "question": "Among operations, investing, and financing activities, which brought in the most (or lost the least) cash flow for Best Buy in FY2023?",
+      "company": "Best Buy",
+      "ticker": "BBY",
+      "cik": "0000764478",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Best Buy generated the most cash flow from operating activities in FY 2023 ($1.8 bn)",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_01275_ev1",
+          "chunk_id": "fb_bestbuy_2023_10k_p41_a13264b07d8a",
+          "required": true,
+          "page": 41,
+          "section": "Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00288",
+      "question": "Was there any drop in Cash & Cash equivalents between FY 2023 and Q2 of FY2024?",
+      "company": "Best Buy",
+      "ticker": "BBY",
+      "cik": "0000764478",
+      "filing_type": "10-Q",
+      "fiscal_year": 2024,
+      "question_type": [
+        "novel-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Yes, there was a decline of ~42% between FY2023 and Q2 of FY 2024.",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00288_ev1",
+          "chunk_id": "fb_bestbuy_2024q2_10q_p19_f232bae31acd",
+          "required": true,
+          "page": 19,
+          "section": "Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00460",
+      "question": "Was there any change in the number of Best Buy stores between Q2 of FY2024 and FY2023?",
+      "company": "Best Buy",
+      "ticker": "BBY",
+      "cik": "0000764478",
+      "filing_type": "10-Q",
+      "fiscal_year": 2024,
+      "question_type": [
+        "novel-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Yes, there is decline in number stores by 1.32% from 982 stores in Q2 FY 2023 to 969 by the end of Q2 FY2024.",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00460_ev1",
+          "chunk_id": "fb_bestbuy_2024q2_10q_p16_bf60df141b42",
+          "required": true,
+          "page": 16,
+          "section": "Segment Information"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_01902",
+      "question": "Which Best Buy product category performed the best (by top line) in the domestic (USA) Market during Q2 of FY2024?",
+      "company": "Best Buy",
+      "ticker": "BBY",
+      "cik": "0000764478",
+      "filing_type": "10-Q",
+      "fiscal_year": 2024,
+      "question_type": [
+        "novel-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "The entertainment segment experienced the highest growth of 9% during Q2 FY2024, primarily from gaming division.",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_01902_ev1",
+          "chunk_id": "fb_bestbuy_2024q2_10q_p17_9124783185d7",
+          "required": true,
+          "page": 17,
+          "section": "Segment Information"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00517",
+      "question": "Are there any product categories / service categories that represent more than 20% of Boeing's revenue for FY2022?",
+      "company": "Boeing",
+      "ticker": "BA",
+      "cik": "0000012927",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Yes. Boeing has product and service categories that represent more than 20% of Boeing's revenue for FY2022. These categories are Commercial Airplanes which comprises 39% of total revenue, Defence which comprises 35% of total revenue and Services which comprises 26% of total revenue.",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00517_ev1",
+          "chunk_id": "fb_boeing_2022_10k_p61_194dd5afd34a",
+          "required": true,
+          "page": 61,
+          "section": "Segment Information"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_01091",
+      "question": "Has Boeing reported any materially important ongoing legal battles from FY2022?",
+      "company": "Boeing",
+      "ticker": "BA",
+      "cik": "0000012927",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Yes. Multiple lawsuits have been filed against Boeing resulting from a 2018 Lion Air crash and a 2019 Ethiopian Airlines crash.",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_01091_ev1",
+          "chunk_id": "fb_boeing_2022_10k_p112_03ae2163e180",
+          "required": true,
+          "page": 112,
+          "section": "Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00678",
+      "question": "Does Boeing have an improving gross margin profile as of FY2022? If gross margin is not a useful metric for a company like this, then state that and explain why.",
+      "company": "Boeing",
+      "ticker": "BA",
+      "cik": "0000012927",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Yes. Boeing has an improving gross margin profile as of FY2022. Gross profit improved from $3,017 million in FY2021 to $3,502 million in FY2022. Gross margin % improved from 4.8% in FY2021 to 5.3% in FY2022.",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00678_ev1",
+          "chunk_id": "fb_boeing_2022_10k_p54_bfefe7ea6c8d",
+          "required": true,
+          "page": 54,
+          "section": "FinanceBench Evidence Page"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_01290",
+      "question": "Who are the primary customers of Boeing as of FY2022?",
+      "company": "Boeing",
+      "ticker": "BA",
+      "cik": "0000012927",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Boeing's primary customers as of FY2022 are a limited number of commercial airlines and the US government. The US government accounted for 40% of Boeing's total revenues in FY2022.",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_01290_ev1",
+          "chunk_id": "fb_boeing_2022_10k_p7_b348b26c1dfd",
+          "required": true,
+          "page": 7,
+          "section": "Item 1A. Risk Factors"
+        },
+        {
+          "evidence_id": "financebench_id_01290_ev2",
+          "chunk_id": "fb_boeing_2022_10k_p9_f2030c42e586",
+          "required": true,
+          "page": 9,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "evidence_id": "financebench_id_01290_ev3",
+          "chunk_id": "fb_boeing_2022_10k_p13_7e0fc6fea66b",
+          "required": true,
+          "page": 13,
+          "section": "Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00464",
+      "question": "Is Boeing's business subject to cyclicality?",
+      "company": "Boeing",
+      "ticker": "BA",
+      "cik": "0000012927",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "novel-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Yes, Boeing's business is subject to cyclicality due to its exposure to the airline industry which is a cyclical industry.",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00464_ev1",
+          "chunk_id": "fb_boeing_2022_10k_p7_b348b26c1dfd",
+          "required": true,
+          "page": 7,
+          "section": "Item 1A. Risk Factors"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00494",
+      "question": "What production rate changes is Boeing forecasting for FY2023?",
+      "company": "Boeing",
+      "ticker": "BA",
+      "cik": "0000012927",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "novel-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Boeing forecasts an increase in the production rates for the 737, 777X and 787 aircrafts in 2023.",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00494_ev1",
+          "chunk_id": "fb_boeing_2022_10k_p8_ee6858b4a555",
+          "required": true,
+          "page": 8,
+          "section": "Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00585",
+      "question": "How does Boeing's effective tax rate in FY2022 compare to FY2021?",
+      "company": "Boeing",
+      "ticker": "BA",
+      "cik": "0000012927",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "novel-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Effective tax rate in FY2022 was 0.62%, compared to -14.76% in FY2021.",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00585_ev1",
+          "chunk_id": "fb_boeing_2022_10k_p54_bfefe7ea6c8d",
+          "required": true,
+          "page": 54,
+          "section": "FinanceBench Evidence Page"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_04980",
+      "question": "What is the FY2021 capital expenditure amount (in USD billions) for PepsiCo? Respond to the question by assuming the perspective of an investment analyst who can only use the details shown within the statement of cash flows.",
+      "company": "PepsiCo",
+      "ticker": "PEP",
+      "cik": "0000077476",
+      "filing_type": "10-K",
+      "fiscal_year": 2021,
+      "question_type": [
+        "metrics-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "$4.60",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_04980_ev1",
+          "chunk_id": "fb_pepsico_2021_10k_p62_9e69bc818ce8",
+          "required": true,
+          "page": 62,
+          "section": "Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_01009",
+      "question": "What are the geographies that Pepsico primarily operates in as of FY2022?",
+      "company": "PepsiCo",
+      "ticker": "PEP",
+      "cik": "0000077476",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "As of FY2022, Pepsico primarily operates in the following geographies: North America, Latin America, Europe, Africa, Middle East, South Asia, Asia Pacific, Australia, New Zealand and China.",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_01009_ev1",
+          "chunk_id": "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+          "required": true,
+          "page": 3,
+          "section": "Item 7. Management Discussion and Analysis"
+        },
+        {
+          "evidence_id": "financebench_id_01009_ev2",
+          "chunk_id": "fb_pepsico_2022_10k_p4_9559b135fb51",
+          "required": true,
+          "page": 4,
+          "section": "FinanceBench Evidence Page"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00735",
+      "question": "Has Pepsico reported any materially important ongoing legal battles from FY2022 and FY2021?",
+      "company": "PepsiCo",
+      "ticker": "PEP",
+      "cik": "0000077476",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "No, Pepsico is not involved in material legal battles.",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00735_ev1",
+          "chunk_id": "fb_pepsico_2022_10k_p25_c3999cba64fc",
+          "required": true,
+          "page": 25,
+          "section": "Item 1A. Risk Factors"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_01328",
+      "question": "What is the quantity of restructuring costs directly outlined in Pepsico's income statements for FY2022? If restructuring costs are not explicitly outlined then state 0.",
+      "company": "PepsiCo",
+      "ticker": "PEP",
+      "cik": "0000077476",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "domain-relevant"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Pepsico's restructuring costs in FY2022 amounted to $411 million .",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_01328_ev1",
+          "chunk_id": "fb_pepsico_2022_10k_p77_043d60152b9a",
+          "required": true,
+          "page": 77,
+          "section": "Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_03620",
+      "question": "What is the FY2022 unadjusted EBITDA less capex for PepsiCo? Define unadjusted EBITDA as unadjusted operating income + depreciation and amortization [from cash flow statement]. Answer in USD millions. Respond to the question by assuming the perspective of an investment analyst who can only use the details shown within the statement of cash flows and the income statement.",
+      "company": "PepsiCo",
+      "ticker": "PEP",
+      "cik": "0000077476",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "metrics-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "$9068.00",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_03620_ev1",
+          "chunk_id": "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+          "required": true,
+          "page": 61,
+          "section": "Financial Statement Table"
+        },
+        {
+          "evidence_id": "financebench_id_03620_ev2",
+          "chunk_id": "fb_pepsico_2022_10k_p63_f9b69c481a33",
+          "required": true,
+          "page": 63,
+          "section": "Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_04481",
+      "question": "What is the FY2022 unadjusted EBITDA % margin for PepsiCo? Calculate unadjusted EBITDA using unadjusted operating income and D&A (from cash flow statement). Give a response to the question by relying on the details shown in the statement of cash flows and the P&L statement.",
+      "company": "PepsiCo",
+      "ticker": "PEP",
+      "cik": "0000077476",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "metrics-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "16.5%",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_04481_ev1",
+          "chunk_id": "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+          "required": true,
+          "page": 61,
+          "section": "Financial Statement Table"
+        },
+        {
+          "evidence_id": "financebench_id_04481_ev2",
+          "chunk_id": "fb_pepsico_2022_10k_p63_f9b69c481a33",
+          "required": true,
+          "page": 63,
+          "section": "Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00302",
+      "question": "Did Pfizer grow its PPNE between FY20 and FY21?",
+      "company": "Pfizer",
+      "ticker": "PFE",
+      "cik": "0000078003",
+      "filing_type": "10-K",
+      "fiscal_year": 2021,
+      "question_type": [
+        "novel-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Yes, change in PPNE was positive year over year",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00302_ev1",
+          "chunk_id": "fb_pfizer_2021_10k_p58_c117a840c854",
+          "required": true,
+          "page": 58,
+          "section": "Balance Sheet"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00702",
+      "question": "Were there any potential events that are not in Pfizer's standard business operations that substantially increased net income in 2019?",
+      "company": "Pfizer",
+      "ticker": "PFE",
+      "cik": "0000078003",
+      "filing_type": "10-K",
+      "fiscal_year": 2021,
+      "question_type": [
+        "novel-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Yes, the gain on completion of Consumer Healthcare JV Transaction",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00702_ev1",
+          "chunk_id": "fb_pfizer_2021_10k_p56_0ca4fa3975f0",
+          "required": true,
+          "page": 56,
+          "section": "FinanceBench Evidence Page"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_02416",
+      "question": "What are three main companies acquired by Pfizer mentioned in this 10K report?",
+      "company": "Pfizer",
+      "ticker": "PFE",
+      "cik": "0000078003",
+      "filing_type": "10-K",
+      "fiscal_year": 2021,
+      "question_type": [
+        "novel-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Trillium, Array, and Therachon",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_02416_ev1",
+          "chunk_id": "fb_pfizer_2021_10k_p69_956d8ec4ea91",
+          "required": true,
+          "page": 69,
+          "section": "Balance Sheet"
+        },
+        {
+          "evidence_id": "financebench_id_02416_ev2",
+          "chunk_id": "fb_pfizer_2021_10k_p70_b484602a0f9c",
+          "required": true,
+          "page": 70,
+          "section": "Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00283",
+      "question": "How much does Pfizer expect to pay to spin off Upjohn in the future in USD million?",
+      "company": "Pfizer",
+      "ticker": "PFE",
+      "cik": "0000078003",
+      "filing_type": "10-Q",
+      "fiscal_year": 2023,
+      "question_type": [
+        "novel-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "77.78",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00283_ev1",
+          "chunk_id": "fb_pfizer_2023q2_10q_p40_c5a54993ae78",
+          "required": true,
+          "page": 40,
+          "section": "Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_00724",
+      "question": "For Pfizer, which geographic region had the biggest drop in Q22023 year over year revenues (on a percentage basis)?",
+      "company": "Pfizer",
+      "ticker": "PFE",
+      "cik": "0000078003",
+      "filing_type": "10-Q",
+      "fiscal_year": 2023,
+      "question_type": [
+        "novel-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Developed Rest of the World",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_00724_ev1",
+          "chunk_id": "fb_pfizer_2023q2_10q_p37_238ce8861d8a",
+          "required": true,
+          "page": 37,
+          "section": "Income Statement"
+        }
+      ]
+    },
+    {
+      "question_id": "financebench_id_02419",
+      "question": "As of Q2'2023, is Pfizer spinning off any large business segments?",
+      "company": "Pfizer",
+      "ticker": "PFE",
+      "cik": "0000078003",
+      "filing_type": "10-Q",
+      "fiscal_year": 2023,
+      "question_type": [
+        "novel-generated"
+      ],
+      "expected_behavior": "answer",
+      "gold_answer": "Yes, it's spinning off Upjohn.",
+      "gold_evidence": [
+        {
+          "evidence_id": "financebench_id_02419_ev1",
+          "chunk_id": "fb_pfizer_2023q2_10q_p40_c5a54993ae78",
+          "required": true,
+          "page": 40,
+          "section": "Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "question_id": "unanswerable_3m_2022_wacc",
+      "question": "What WACC did 3M disclose in its FY2022 10-K?",
+      "company": "3M",
+      "ticker": "",
+      "cik": "",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "valuation",
+        "unanswerable"
+      ],
+      "expected_behavior": "refuse",
+      "gold_answer": "",
+      "gold_evidence": []
+    },
+    {
+      "question_id": "unanswerable_3m_2022_market_price",
+      "question": "What was the latest market price for 3M?",
+      "company": "3M",
+      "ticker": "",
+      "cik": "",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "market_data",
+        "unanswerable"
+      ],
+      "expected_behavior": "refuse",
+      "gold_answer": "",
+      "gold_evidence": []
+    },
+    {
+      "question_id": "unanswerable_amd_2022_wacc",
+      "question": "What WACC did AMD disclose in its FY2022 10-K?",
+      "company": "AMD",
+      "ticker": "",
+      "cik": "",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "valuation",
+        "unanswerable"
+      ],
+      "expected_behavior": "refuse",
+      "gold_answer": "",
+      "gold_evidence": []
+    },
+    {
+      "question_id": "unanswerable_amd_2022_market_price",
+      "question": "What was the latest market price for AMD?",
+      "company": "AMD",
+      "ticker": "",
+      "cik": "",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "market_data",
+        "unanswerable"
+      ],
+      "expected_behavior": "refuse",
+      "gold_answer": "",
+      "gold_evidence": []
+    },
+    {
+      "question_id": "unanswerable_best_buy_2023_wacc",
+      "question": "What WACC did Best Buy disclose in its FY2023 10-K?",
+      "company": "Best Buy",
+      "ticker": "",
+      "cik": "",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": [
+        "valuation",
+        "unanswerable"
+      ],
+      "expected_behavior": "refuse",
+      "gold_answer": "",
+      "gold_evidence": []
+    },
+    {
+      "question_id": "unanswerable_best_buy_2023_market_price",
+      "question": "What was the latest market price for Best Buy?",
+      "company": "Best Buy",
+      "ticker": "",
+      "cik": "",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": [
+        "market_data",
+        "unanswerable"
+      ],
+      "expected_behavior": "refuse",
+      "gold_answer": "",
+      "gold_evidence": []
+    },
+    {
+      "question_id": "unanswerable_amcor_2023_wacc",
+      "question": "What WACC did Amcor disclose in its FY2023 10-K?",
+      "company": "Amcor",
+      "ticker": "",
+      "cik": "",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": [
+        "valuation",
+        "unanswerable"
+      ],
+      "expected_behavior": "refuse",
+      "gold_answer": "",
+      "gold_evidence": []
+    },
+    {
+      "question_id": "unanswerable_amcor_2023_market_price",
+      "question": "What was the latest market price for Amcor?",
+      "company": "Amcor",
+      "ticker": "",
+      "cik": "",
+      "filing_type": "10-K",
+      "fiscal_year": 2023,
+      "question_type": [
+        "market_data",
+        "unanswerable"
+      ],
+      "expected_behavior": "refuse",
+      "gold_answer": "",
+      "gold_evidence": []
+    },
+    {
+      "question_id": "unanswerable_pepsico_2022_wacc",
+      "question": "What WACC did PepsiCo disclose in its FY2022 10-K?",
+      "company": "PepsiCo",
+      "ticker": "",
+      "cik": "",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "valuation",
+        "unanswerable"
+      ],
+      "expected_behavior": "refuse",
+      "gold_answer": "",
+      "gold_evidence": []
+    },
+    {
+      "question_id": "unanswerable_pepsico_2022_market_price",
+      "question": "What was the latest market price for PepsiCo?",
+      "company": "PepsiCo",
+      "ticker": "",
+      "cik": "",
+      "filing_type": "10-K",
+      "fiscal_year": 2022,
+      "question_type": [
+        "market_data",
+        "unanswerable"
+      ],
+      "expected_behavior": "refuse",
+      "gold_answer": "",
+      "gold_evidence": []
+    }
+  ]
+}

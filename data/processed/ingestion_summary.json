@@ -1,0 +1,7 @@
+{
+  "raw_corpus_path": "data/raw/sample_corpus.jsonl",
+  "processed_chunks_path": "data/processed/chunks.jsonl",
+  "chunk_count": 10,
+  "required_metadata_count": 13,
+  "required_metadata_present_rate": 1.0
+}

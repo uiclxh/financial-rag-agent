@@ -1,0 +1,8 @@
+{
+  "chunks_path": "data/processed/financebench_chunks.jsonl",
+  "index_path": "data/processed/bm25_financebench_index.json",
+  "token_pattern": "[A-Za-z0-9$%.-]+",
+  "k1": 1.5,
+  "b": 0.75
+}
+

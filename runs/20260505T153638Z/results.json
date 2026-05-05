@@ -1,0 +1,5504 @@
+{
+  "summary": {
+    "run_id": "20260505T153638Z",
+    "run_date": "2026-05-05T15:36:38.357084+00:00",
+    "dataset_version": "financebench_real_week1_v0",
+    "corpus_version": "financebench_evidence_pages_v0",
+    "benchmark_size": 60,
+    "answerable_questions": 50,
+    "unanswerable_questions": 10,
+    "retrieval_config": "bm25_financebench_real",
+    "notes": "Week 1 evaluates retrieval only. Answer/citation/refusal metrics are not evaluated until Week 3-6.",
+    "evidence_level_retrieval_recall@5": 0.9152542372881356,
+    "question_recall@5": 0.9,
+    "strict_precision@5": 0.21600000000000003,
+    "relaxed_precision@5": 0.7319999999999999,
+    "gold_page_hit@5": 0.92,
+    "evidence_level_retrieval_recall@10": 1.0,
+    "question_recall@10": 1.0,
+    "strict_precision@10": 0.11799999999999997,
+    "relaxed_precision@10": 0.418,
+    "gold_page_hit@10": 1.0,
+    "wrong_company_rate": 0.0,
+    "wrong_year_rate": 0.0
+  },
+  "per_question": [
+    {
+      "question_id": "financebench_id_03029",
+      "question": "What is the FY2018 capital expenditure amount (in USD millions) for 3M? Give a response to the question by relying on the details shown in the cash flow statement.",
+      "expected_behavior": "answer",
+      "question_type": [
+        "metrics-generated"
+      ],
+      "metadata_filters": {
+        "company": "3M",
+        "fiscal_year": 2018,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_3m_2018_10k_p59_a2793f655b32"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_3m_2018_10k_p57_bf48185153d4",
+            "fb_3m_2018_10k_p59_a2793f655b32"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_3m_2018_10k_p57_bf48185153d4",
+            "fb_3m_2018_10k_p59_a2793f655b32"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_3m_2018_10k_p57_bf48185153d4",
+          "score": 11.328489800265626,
+          "company": "3M",
+          "fiscal_year": 2018,
+          "page": 57,
+          "section": "Financial Statement Table"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_3m_2018_10k_p59_a2793f655b32",
+          "score": 11.125726813806546,
+          "company": "3M",
+          "fiscal_year": 2018,
+          "page": 59,
+          "section": "Cash Flow Statement"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_04672",
+      "question": "Assume that you are a public equities analyst. Answer the following question by primarily using information that is shown in the balance sheet: what is the year end FY2018 net PPNE for 3M? Answer in USD billions.",
+      "expected_behavior": "answer",
+      "question_type": [
+        "metrics-generated"
+      ],
+      "metadata_filters": {
+        "company": "3M",
+        "fiscal_year": 2018,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_3m_2018_10k_p57_bf48185153d4"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_3m_2018_10k_p59_a2793f655b32",
+            "fb_3m_2018_10k_p57_bf48185153d4"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_3m_2018_10k_p59_a2793f655b32",
+            "fb_3m_2018_10k_p57_bf48185153d4"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_3m_2018_10k_p59_a2793f655b32",
+          "score": 7.940180973072352,
+          "company": "3M",
+          "fiscal_year": 2018,
+          "page": 59,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_3m_2018_10k_p57_bf48185153d4",
+          "score": 7.325668627192074,
+          "company": "3M",
+          "fiscal_year": 2018,
+          "page": 57,
+          "section": "Financial Statement Table"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00499",
+      "question": "Is 3M a capital-intensive business based on FY2022 data?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "3M",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_3m_2022_10k_p47_670b66e4f791",
+        "fb_3m_2022_10k_p49_0fcdc5102f07",
+        "fb_3m_2022_10k_p51_01d9404bd8c1"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 3,
+          "required_gold_hits": 3,
+          "question_recall_pass": true,
+          "strict_precision": 0.6,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_3m_2022_10k_p26_214910c54a40",
+            "fb_3m_2022_10k_p47_670b66e4f791",
+            "fb_3m_2022_10k_p24_71b863b13d1d",
+            "fb_3m_2022_10k_p51_01d9404bd8c1",
+            "fb_3m_2022_10k_p49_0fcdc5102f07"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 3,
+          "required_gold_hits": 3,
+          "question_recall_pass": true,
+          "strict_precision": 0.3,
+          "relaxed_precision": 0.5,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_3m_2022_10k_p26_214910c54a40",
+            "fb_3m_2022_10k_p47_670b66e4f791",
+            "fb_3m_2022_10k_p24_71b863b13d1d",
+            "fb_3m_2022_10k_p51_01d9404bd8c1",
+            "fb_3m_2022_10k_p49_0fcdc5102f07"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_3m_2022_10k_p26_214910c54a40",
+          "score": 7.813661626318017,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 26,
+          "section": "Item 7. Management Discussion and Analysis"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_3m_2022_10k_p47_670b66e4f791",
+          "score": 5.137301941059559,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 47,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_3m_2022_10k_p24_71b863b13d1d",
+          "score": 3.4176054931267443,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 24,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_3m_2022_10k_p51_01d9404bd8c1",
+          "score": 3.4138061652059335,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 51,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_3m_2022_10k_p49_0fcdc5102f07",
+          "score": 3.0862057004309853,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 49,
+          "section": "Balance Sheet"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_01226",
+      "question": "What drove operating margin change as of FY2022 for 3M? If operating margin is not a useful metric for a company like this, then please state that and explain why.",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "3M",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_3m_2022_10k_p26_214910c54a40"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_3m_2022_10k_p26_214910c54a40",
+            "fb_3m_2022_10k_p24_71b863b13d1d",
+            "fb_3m_2022_10k_p47_670b66e4f791",
+            "fb_3m_2022_10k_p51_01d9404bd8c1",
+            "fb_3m_2022_10k_p49_0fcdc5102f07"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.5,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_3m_2022_10k_p26_214910c54a40",
+            "fb_3m_2022_10k_p24_71b863b13d1d",
+            "fb_3m_2022_10k_p47_670b66e4f791",
+            "fb_3m_2022_10k_p51_01d9404bd8c1",
+            "fb_3m_2022_10k_p49_0fcdc5102f07"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_3m_2022_10k_p26_214910c54a40",
+          "score": 17.11460914399433,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 26,
+          "section": "Item 7. Management Discussion and Analysis"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_3m_2022_10k_p24_71b863b13d1d",
+          "score": 8.671063863733346,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 24,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_3m_2022_10k_p47_670b66e4f791",
+          "score": 7.8231143551957265,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 47,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_3m_2022_10k_p51_01d9404bd8c1",
+          "score": 6.681491298255226,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 51,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_3m_2022_10k_p49_0fcdc5102f07",
+          "score": 6.596277472776561,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 49,
+          "section": "Balance Sheet"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_01865",
+      "question": "If we exclude the impact of M&A, which segment has dragged down 3M's overall growth in 2022?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "novel-generated"
+      ],
+      "metadata_filters": {
+        "company": "3M",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_3m_2022_10k_p24_71b863b13d1d"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_3m_2022_10k_p26_214910c54a40",
+            "fb_3m_2022_10k_p24_71b863b13d1d",
+            "fb_3m_2022_10k_p47_670b66e4f791",
+            "fb_3m_2022_10k_p49_0fcdc5102f07",
+            "fb_3m_2022_10k_p51_01d9404bd8c1"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.5,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_3m_2022_10k_p26_214910c54a40",
+            "fb_3m_2022_10k_p24_71b863b13d1d",
+            "fb_3m_2022_10k_p47_670b66e4f791",
+            "fb_3m_2022_10k_p49_0fcdc5102f07",
+            "fb_3m_2022_10k_p51_01d9404bd8c1"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_3m_2022_10k_p26_214910c54a40",
+          "score": 14.093005290704385,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 26,
+          "section": "Item 7. Management Discussion and Analysis"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_3m_2022_10k_p24_71b863b13d1d",
+          "score": 5.105221556958435,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 24,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_3m_2022_10k_p47_670b66e4f791",
+          "score": 4.721227587025007,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 47,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_3m_2022_10k_p49_0fcdc5102f07",
+          "score": 4.266536188619725,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 49,
+          "section": "Balance Sheet"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_3m_2022_10k_p51_01d9404bd8c1",
+          "score": 2.7482667518159998,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 51,
+          "section": "Cash Flow Statement"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00807",
+      "question": "Does 3M have a reasonably healthy liquidity profile based on its quick ratio for Q2 of FY2023? If the quick ratio is not relevant to measure liquidity, please state that and explain why.",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "3M",
+        "fiscal_year": 2023,
+        "filing_type": "10-Q"
+      },
+      "gold_chunk_ids": [
+        "fb_3m_2023q2_10q_p4_76d9d88281aa"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_3m_2023q2_10q_p0_6fc1772078d3",
+            "fb_3m_2023q2_10q_p61_95bd7fd295b7",
+            "fb_3m_2023q2_10q_p4_76d9d88281aa"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.3,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_3m_2023q2_10q_p0_6fc1772078d3",
+            "fb_3m_2023q2_10q_p61_95bd7fd295b7",
+            "fb_3m_2023q2_10q_p4_76d9d88281aa"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_3m_2023q2_10q_p0_6fc1772078d3",
+          "score": 18.187766962177907,
+          "company": "3M",
+          "fiscal_year": 2023,
+          "page": 0,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_3m_2023q2_10q_p61_95bd7fd295b7",
+          "score": 12.978790251231608,
+          "company": "3M",
+          "fiscal_year": 2023,
+          "page": 61,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_3m_2023q2_10q_p4_76d9d88281aa",
+          "score": 3.4134320667735025,
+          "company": "3M",
+          "fiscal_year": 2023,
+          "page": 4,
+          "section": "Balance Sheet"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00941",
+      "question": "Which debt securities are registered to trade on a national securities exchange under 3M's name as of Q2 of 2023?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "3M",
+        "fiscal_year": 2023,
+        "filing_type": "10-Q"
+      },
+      "gold_chunk_ids": [
+        "fb_3m_2023q2_10q_p0_6fc1772078d3"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_3m_2023q2_10q_p0_6fc1772078d3",
+            "fb_3m_2023q2_10q_p61_95bd7fd295b7",
+            "fb_3m_2023q2_10q_p4_76d9d88281aa"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.3,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_3m_2023q2_10q_p0_6fc1772078d3",
+            "fb_3m_2023q2_10q_p61_95bd7fd295b7",
+            "fb_3m_2023q2_10q_p4_76d9d88281aa"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_3m_2023q2_10q_p0_6fc1772078d3",
+          "score": 29.19663409463894,
+          "company": "3M",
+          "fiscal_year": 2023,
+          "page": 0,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_3m_2023q2_10q_p61_95bd7fd295b7",
+          "score": 13.163288812490391,
+          "company": "3M",
+          "fiscal_year": 2023,
+          "page": 61,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_3m_2023q2_10q_p4_76d9d88281aa",
+          "score": 10.323142682506901,
+          "company": "3M",
+          "fiscal_year": 2023,
+          "page": 4,
+          "section": "Balance Sheet"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_01858",
+      "question": "Does 3M maintain a stable trend of dividend distribution?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "novel-generated"
+      ],
+      "metadata_filters": {
+        "company": "3M",
+        "fiscal_year": 2023,
+        "filing_type": "10-Q"
+      },
+      "gold_chunk_ids": [
+        "fb_3m_2023q2_10q_p61_95bd7fd295b7"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_3m_2023q2_10q_p61_95bd7fd295b7",
+            "fb_3m_2023q2_10q_p0_6fc1772078d3",
+            "fb_3m_2023q2_10q_p4_76d9d88281aa"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.3,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_3m_2023q2_10q_p61_95bd7fd295b7",
+            "fb_3m_2023q2_10q_p0_6fc1772078d3",
+            "fb_3m_2023q2_10q_p4_76d9d88281aa"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_3m_2023q2_10q_p61_95bd7fd295b7",
+          "score": 8.142046755555462,
+          "company": "3M",
+          "fiscal_year": 2023,
+          "page": 61,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_3m_2023q2_10q_p0_6fc1772078d3",
+          "score": 3.698598219853278,
+          "company": "3M",
+          "fiscal_year": 2023,
+          "page": 0,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_3m_2023q2_10q_p4_76d9d88281aa",
+          "score": 3.0759425509634624,
+          "company": "3M",
+          "fiscal_year": 2023,
+          "page": 4,
+          "section": "Balance Sheet"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_03882",
+      "question": "What is Amcor's year end FY2020 net AR (in USD millions)? Address the question by adopting the perspective of a financial analyst who can only use the details shown within the balance sheet.",
+      "expected_behavior": "answer",
+      "question_type": [
+        "metrics-generated"
+      ],
+      "metadata_filters": {
+        "company": "Amcor",
+        "fiscal_year": 2020,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_amcor_2020_10k_p49_c059c4a7aa73"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amcor_2020_10k_p49_c059c4a7aa73"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.1,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amcor_2020_10k_p49_c059c4a7aa73"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_amcor_2020_10k_p49_c059c4a7aa73",
+          "score": 8.098209283006105,
+          "company": "Amcor",
+          "fiscal_year": 2020,
+          "page": 49,
+          "section": "Balance Sheet"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00799",
+      "question": "Has AMCOR's quick ratio improved or declined between FY2023 and FY2022? If the quick ratio is not something that a financial analyst would ask about a company like this, then state that and explain why.",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "Amcor",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_amcor_2023_10k_p51_452f00a718ea"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.8,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amcor_2023_10k_p4_04bf7c5785b1",
+            "fb_amcor_2023_10k_p63_8b8318fdfb48",
+            "fb_amcor_2023_10k_p49_c03da713f00e",
+            "fb_amcor_2023_10k_p51_452f00a718ea"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amcor_2023_10k_p4_04bf7c5785b1",
+            "fb_amcor_2023_10k_p63_8b8318fdfb48",
+            "fb_amcor_2023_10k_p49_c03da713f00e",
+            "fb_amcor_2023_10k_p51_452f00a718ea"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_amcor_2023_10k_p4_04bf7c5785b1",
+          "score": 18.879427479792,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 4,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_amcor_2023_10k_p63_8b8318fdfb48",
+          "score": 17.204446823528247,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 63,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_amcor_2023_10k_p49_c03da713f00e",
+          "score": 5.105388253696816,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 49,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_amcor_2023_10k_p51_452f00a718ea",
+          "score": 4.842102585829964,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 51,
+          "section": "Balance Sheet"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_01079",
+      "question": "What are major acquisitions that AMCOR has done in FY2023, FY2022 and FY2021?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "Amcor",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_amcor_2023_10k_p63_8b8318fdfb48"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.8,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amcor_2023_10k_p4_04bf7c5785b1",
+            "fb_amcor_2023_10k_p63_8b8318fdfb48",
+            "fb_amcor_2023_10k_p51_452f00a718ea",
+            "fb_amcor_2023_10k_p49_c03da713f00e"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amcor_2023_10k_p4_04bf7c5785b1",
+            "fb_amcor_2023_10k_p63_8b8318fdfb48",
+            "fb_amcor_2023_10k_p51_452f00a718ea",
+            "fb_amcor_2023_10k_p49_c03da713f00e"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_amcor_2023_10k_p4_04bf7c5785b1",
+          "score": 8.089564480297343,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 4,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_amcor_2023_10k_p63_8b8318fdfb48",
+          "score": 7.2385487018908306,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 63,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_amcor_2023_10k_p51_452f00a718ea",
+          "score": 4.569577142976882,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 51,
+          "section": "Balance Sheet"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_amcor_2023_10k_p49_c03da713f00e",
+          "score": 4.477548995802841,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 49,
+          "section": "FinanceBench Evidence Page"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_01148",
+      "question": "What industry does AMCOR primarily operate in?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "Amcor",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_amcor_2023_10k_p4_04bf7c5785b1"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.8,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amcor_2023_10k_p4_04bf7c5785b1",
+            "fb_amcor_2023_10k_p51_452f00a718ea",
+            "fb_amcor_2023_10k_p49_c03da713f00e",
+            "fb_amcor_2023_10k_p63_8b8318fdfb48"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amcor_2023_10k_p4_04bf7c5785b1",
+            "fb_amcor_2023_10k_p51_452f00a718ea",
+            "fb_amcor_2023_10k_p49_c03da713f00e",
+            "fb_amcor_2023_10k_p63_8b8318fdfb48"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_amcor_2023_10k_p4_04bf7c5785b1",
+          "score": 7.269074610205773,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 4,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_amcor_2023_10k_p51_452f00a718ea",
+          "score": 4.548425956701536,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 51,
+          "section": "Balance Sheet"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_amcor_2023_10k_p49_c03da713f00e",
+          "score": 4.457742501946403,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 49,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_amcor_2023_10k_p63_8b8318fdfb48",
+          "score": 1.1011743912726866,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 63,
+          "section": "Segment Information"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00684",
+      "question": "Does AMCOR have an improving gross margin profile as of FY2023? If gross margin is not a useful metric for a company like this, then state that and explain why.",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "Amcor",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_amcor_2023_10k_p49_c03da713f00e"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.8,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amcor_2023_10k_p4_04bf7c5785b1",
+            "fb_amcor_2023_10k_p63_8b8318fdfb48",
+            "fb_amcor_2023_10k_p49_c03da713f00e",
+            "fb_amcor_2023_10k_p51_452f00a718ea"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amcor_2023_10k_p4_04bf7c5785b1",
+            "fb_amcor_2023_10k_p63_8b8318fdfb48",
+            "fb_amcor_2023_10k_p49_c03da713f00e",
+            "fb_amcor_2023_10k_p51_452f00a718ea"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_amcor_2023_10k_p4_04bf7c5785b1",
+          "score": 16.661264025242204,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 4,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_amcor_2023_10k_p63_8b8318fdfb48",
+          "score": 11.106911707106649,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 63,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_amcor_2023_10k_p49_c03da713f00e",
+          "score": 9.12872164611252,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 49,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_amcor_2023_10k_p51_452f00a718ea",
+          "score": 5.647914556022505,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 51,
+          "section": "Balance Sheet"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_01936",
+      "question": "What is the nature & purpose of AMCOR's restructuring liability as oF Q2 of FY2023 close?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "novel-generated"
+      ],
+      "metadata_filters": {
+        "company": "Amcor",
+        "fiscal_year": 2023,
+        "filing_type": "10-Q"
+      },
+      "gold_chunk_ids": [
+        "fb_amcor_2023q2_10q_p14_538d1a94a654"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amcor_2023q2_10q_p14_538d1a94a654"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.1,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amcor_2023q2_10q_p14_538d1a94a654"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_amcor_2023q2_10q_p14_538d1a94a654",
+          "score": 13.906267179608065,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 14,
+          "section": "Balance Sheet"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_03069",
+      "question": "Answer the following question as if you are an equity research analyst and have lost internet connection so you do not have access to financial metric providers. According to the details clearly outlined within the P&L statement and the statement of cash flows, what is the FY2015 depreciation and amortization (D&A from cash flow statement) % margin for AMD?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "metrics-generated"
+      ],
+      "metadata_filters": {
+        "company": "AMD",
+        "fiscal_year": 2015,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_amd_2015_10k_p55_1a9b0067471b",
+        "fb_amd_2015_10k_p59_16d7b9f96e4f"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 2,
+          "required_gold_hits": 2,
+          "question_recall_pass": true,
+          "strict_precision": 0.4,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amd_2015_10k_p59_16d7b9f96e4f",
+            "fb_amd_2015_10k_p55_1a9b0067471b"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 2,
+          "required_gold_hits": 2,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amd_2015_10k_p59_16d7b9f96e4f",
+            "fb_amd_2015_10k_p55_1a9b0067471b"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_amd_2015_10k_p59_16d7b9f96e4f",
+          "score": 15.11623714759507,
+          "company": "AMD",
+          "fiscal_year": 2015,
+          "page": 59,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_amd_2015_10k_p55_1a9b0067471b",
+          "score": 8.183562712670787,
+          "company": "AMD",
+          "fiscal_year": 2015,
+          "page": 55,
+          "section": "Financial Statement Table"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00222",
+      "question": "Does AMD have a reasonably healthy liquidity profile based on its quick ratio for FY22? If the quick ratio is not relevant to measure liquidity, please state that and explain why.",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "AMD",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_amd_2022_10k_p55_24e47dcbde5d"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_amd_2022_10k_p3_3840b3601192",
+            "fb_amd_2022_10k_p42_4251da19ff97",
+            "fb_amd_2022_10k_p11_a49f188c20f9",
+            "fb_amd_2022_10k_p47_6771d3ead6f2",
+            "fb_amd_2022_10k_p57_38b108954f1b"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amd_2022_10k_p3_3840b3601192",
+            "fb_amd_2022_10k_p42_4251da19ff97",
+            "fb_amd_2022_10k_p11_a49f188c20f9",
+            "fb_amd_2022_10k_p47_6771d3ead6f2",
+            "fb_amd_2022_10k_p57_38b108954f1b",
+            "fb_amd_2022_10k_p55_24e47dcbde5d"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_amd_2022_10k_p3_3840b3601192",
+          "score": 16.72072070171641,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 3,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_amd_2022_10k_p42_4251da19ff97",
+          "score": 13.188905709952136,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 42,
+          "section": "Balance Sheet"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_amd_2022_10k_p11_a49f188c20f9",
+          "score": 7.517076503939561,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 11,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_amd_2022_10k_p47_6771d3ead6f2",
+          "score": 5.519421312867144,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 47,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_amd_2022_10k_p57_38b108954f1b",
+          "score": 1.0620243495112653,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 57,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_amd_2022_10k_p55_24e47dcbde5d",
+          "score": 0.09841622260972022,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 55,
+          "section": "Balance Sheet"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00995",
+      "question": "What are the major products and services that AMD sells as of FY22?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "AMD",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_amd_2022_10k_p3_3840b3601192"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amd_2022_10k_p3_3840b3601192",
+            "fb_amd_2022_10k_p42_4251da19ff97",
+            "fb_amd_2022_10k_p11_a49f188c20f9",
+            "fb_amd_2022_10k_p47_6771d3ead6f2",
+            "fb_amd_2022_10k_p57_38b108954f1b"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amd_2022_10k_p3_3840b3601192",
+            "fb_amd_2022_10k_p42_4251da19ff97",
+            "fb_amd_2022_10k_p11_a49f188c20f9",
+            "fb_amd_2022_10k_p47_6771d3ead6f2",
+            "fb_amd_2022_10k_p57_38b108954f1b",
+            "fb_amd_2022_10k_p55_24e47dcbde5d"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_amd_2022_10k_p3_3840b3601192",
+          "score": 13.594586152116799,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 3,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_amd_2022_10k_p42_4251da19ff97",
+          "score": 11.122461666463744,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 42,
+          "section": "Balance Sheet"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_amd_2022_10k_p11_a49f188c20f9",
+          "score": 9.499857070753142,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 11,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_amd_2022_10k_p47_6771d3ead6f2",
+          "score": 1.1744927207027416,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 47,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_amd_2022_10k_p57_38b108954f1b",
+          "score": 0.04256317109090596,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 57,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_amd_2022_10k_p55_24e47dcbde5d",
+          "score": 0.03819655814085711,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 55,
+          "section": "Balance Sheet"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_01198",
+      "question": "What drove revenue change as of the FY22 for AMD?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "AMD",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_amd_2022_10k_p42_4251da19ff97"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amd_2022_10k_p3_3840b3601192",
+            "fb_amd_2022_10k_p42_4251da19ff97",
+            "fb_amd_2022_10k_p47_6771d3ead6f2",
+            "fb_amd_2022_10k_p11_a49f188c20f9",
+            "fb_amd_2022_10k_p57_38b108954f1b"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amd_2022_10k_p3_3840b3601192",
+            "fb_amd_2022_10k_p42_4251da19ff97",
+            "fb_amd_2022_10k_p47_6771d3ead6f2",
+            "fb_amd_2022_10k_p11_a49f188c20f9",
+            "fb_amd_2022_10k_p57_38b108954f1b",
+            "fb_amd_2022_10k_p55_24e47dcbde5d"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_amd_2022_10k_p3_3840b3601192",
+          "score": 9.926228237278968,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 3,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_amd_2022_10k_p42_4251da19ff97",
+          "score": 8.998111767767929,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 42,
+          "section": "Balance Sheet"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_amd_2022_10k_p47_6771d3ead6f2",
+          "score": 4.227844765362971,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 47,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_amd_2022_10k_p11_a49f188c20f9",
+          "score": 2.7162568854737574,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 11,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_amd_2022_10k_p57_38b108954f1b",
+          "score": 0.3381064918045878,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 57,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_amd_2022_10k_p55_24e47dcbde5d",
+          "score": 0.01717403008284887,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 55,
+          "section": "Balance Sheet"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00917",
+      "question": "What drove operating margin change as of the FY22 for AMD? If operating margin is not a useful metric for a company like this, then please state that and explain why.",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "AMD",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_amd_2022_10k_p42_4251da19ff97"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amd_2022_10k_p42_4251da19ff97",
+            "fb_amd_2022_10k_p3_3840b3601192",
+            "fb_amd_2022_10k_p47_6771d3ead6f2",
+            "fb_amd_2022_10k_p11_a49f188c20f9",
+            "fb_amd_2022_10k_p57_38b108954f1b"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amd_2022_10k_p42_4251da19ff97",
+            "fb_amd_2022_10k_p3_3840b3601192",
+            "fb_amd_2022_10k_p47_6771d3ead6f2",
+            "fb_amd_2022_10k_p11_a49f188c20f9",
+            "fb_amd_2022_10k_p57_38b108954f1b",
+            "fb_amd_2022_10k_p55_24e47dcbde5d"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_amd_2022_10k_p42_4251da19ff97",
+          "score": 20.933923859446153,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 42,
+          "section": "Balance Sheet"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_amd_2022_10k_p3_3840b3601192",
+          "score": 17.33575476236576,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 3,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_amd_2022_10k_p47_6771d3ead6f2",
+          "score": 8.511050862011174,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 47,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_amd_2022_10k_p11_a49f188c20f9",
+          "score": 8.158743299350148,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 11,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_amd_2022_10k_p57_38b108954f1b",
+          "score": 2.0236386915809907,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 57,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_amd_2022_10k_p55_24e47dcbde5d",
+          "score": 1.1429664864263167,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 55,
+          "section": "Balance Sheet"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_01279",
+      "question": "Among operations, investing, and financing activities, which brought in the most (or lost the least) cash flow for AMD in FY22?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "AMD",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_amd_2022_10k_p57_38b108954f1b"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amd_2022_10k_p3_3840b3601192",
+            "fb_amd_2022_10k_p57_38b108954f1b",
+            "fb_amd_2022_10k_p42_4251da19ff97",
+            "fb_amd_2022_10k_p11_a49f188c20f9",
+            "fb_amd_2022_10k_p47_6771d3ead6f2"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amd_2022_10k_p3_3840b3601192",
+            "fb_amd_2022_10k_p57_38b108954f1b",
+            "fb_amd_2022_10k_p42_4251da19ff97",
+            "fb_amd_2022_10k_p11_a49f188c20f9",
+            "fb_amd_2022_10k_p47_6771d3ead6f2",
+            "fb_amd_2022_10k_p55_24e47dcbde5d"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_amd_2022_10k_p3_3840b3601192",
+          "score": 15.962080777959658,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 3,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_amd_2022_10k_p57_38b108954f1b",
+          "score": 10.404422236473724,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 57,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_amd_2022_10k_p42_4251da19ff97",
+          "score": 10.082103474674343,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 42,
+          "section": "Balance Sheet"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_amd_2022_10k_p11_a49f188c20f9",
+          "score": 7.181245164405539,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 11,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_amd_2022_10k_p47_6771d3ead6f2",
+          "score": 2.8568349206676498,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 47,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_amd_2022_10k_p55_24e47dcbde5d",
+          "score": 1.0124740461387565,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 55,
+          "section": "Balance Sheet"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00563",
+      "question": "From FY21 to FY22, excluding Embedded, in which AMD reporting segment did sales proportionally increase the most?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "novel-generated"
+      ],
+      "metadata_filters": {
+        "company": "AMD",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_amd_2022_10k_p47_6771d3ead6f2"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amd_2022_10k_p42_4251da19ff97",
+            "fb_amd_2022_10k_p47_6771d3ead6f2",
+            "fb_amd_2022_10k_p3_3840b3601192",
+            "fb_amd_2022_10k_p11_a49f188c20f9",
+            "fb_amd_2022_10k_p57_38b108954f1b"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amd_2022_10k_p42_4251da19ff97",
+            "fb_amd_2022_10k_p47_6771d3ead6f2",
+            "fb_amd_2022_10k_p3_3840b3601192",
+            "fb_amd_2022_10k_p11_a49f188c20f9",
+            "fb_amd_2022_10k_p57_38b108954f1b",
+            "fb_amd_2022_10k_p55_24e47dcbde5d"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_amd_2022_10k_p42_4251da19ff97",
+          "score": 15.983959811399753,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 42,
+          "section": "Balance Sheet"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_amd_2022_10k_p47_6771d3ead6f2",
+          "score": 13.678143714628135,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 47,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_amd_2022_10k_p3_3840b3601192",
+          "score": 10.983522794905785,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 3,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_amd_2022_10k_p11_a49f188c20f9",
+          "score": 8.331978234856477,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 11,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_amd_2022_10k_p57_38b108954f1b",
+          "score": 3.6913125808013074,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 57,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_amd_2022_10k_p55_24e47dcbde5d",
+          "score": 0.8119800808914279,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 55,
+          "section": "Balance Sheet"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00757",
+      "question": "Did AMD report customer concentration in FY22?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "novel-generated"
+      ],
+      "metadata_filters": {
+        "company": "AMD",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_amd_2022_10k_p11_a49f188c20f9"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amd_2022_10k_p3_3840b3601192",
+            "fb_amd_2022_10k_p42_4251da19ff97",
+            "fb_amd_2022_10k_p11_a49f188c20f9",
+            "fb_amd_2022_10k_p47_6771d3ead6f2",
+            "fb_amd_2022_10k_p57_38b108954f1b"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_amd_2022_10k_p3_3840b3601192",
+            "fb_amd_2022_10k_p42_4251da19ff97",
+            "fb_amd_2022_10k_p11_a49f188c20f9",
+            "fb_amd_2022_10k_p47_6771d3ead6f2",
+            "fb_amd_2022_10k_p57_38b108954f1b",
+            "fb_amd_2022_10k_p55_24e47dcbde5d"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_amd_2022_10k_p3_3840b3601192",
+          "score": 7.736314229326324,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 3,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_amd_2022_10k_p42_4251da19ff97",
+          "score": 7.041857401446729,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 42,
+          "section": "Balance Sheet"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_amd_2022_10k_p11_a49f188c20f9",
+          "score": 3.557494238418344,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 11,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_amd_2022_10k_p47_6771d3ead6f2",
+          "score": 1.9267436837140548,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 47,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_amd_2022_10k_p57_38b108954f1b",
+          "score": 0.13352612841928937,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 57,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_amd_2022_10k_p55_24e47dcbde5d",
+          "score": 0.081228662989534,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 55,
+          "section": "Balance Sheet"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_02608",
+      "question": "In agreement with the information outlined in the income statement, what is the FY2015 - FY2017 3 year average net profit margin (as a %) for Best Buy? Answer in units of percents and round to one decimal place.",
+      "expected_behavior": "answer",
+      "question_type": [
+        "metrics-generated"
+      ],
+      "metadata_filters": {
+        "company": "Best Buy",
+        "fiscal_year": 2017,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_bestbuy_2017_10k_p55_e4c5be7ff888"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_bestbuy_2017_10k_p55_e4c5be7ff888"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.1,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_bestbuy_2017_10k_p55_e4c5be7ff888"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_bestbuy_2017_10k_p55_e4c5be7ff888",
+          "score": 1.1517051688146145,
+          "company": "Best Buy",
+          "fiscal_year": 2017,
+          "page": 55,
+          "section": "Financial Statement Table"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_04417",
+      "question": "What is the year end FY2019 total amount of inventories for Best Buy? Answer in USD millions. Base your judgments on the information provided primarily in the balance sheet.",
+      "expected_behavior": "answer",
+      "question_type": [
+        "metrics-generated"
+      ],
+      "metadata_filters": {
+        "company": "Best Buy",
+        "fiscal_year": 2019,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_bestbuy_2019_10k_p51_275615c43e81"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_bestbuy_2019_10k_p51_275615c43e81"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.1,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_bestbuy_2019_10k_p51_275615c43e81"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_bestbuy_2019_10k_p51_275615c43e81",
+          "score": 3.476767988381919,
+          "company": "Best Buy",
+          "fiscal_year": 2019,
+          "page": 51,
+          "section": "Balance Sheet"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00685",
+      "question": "Are Best Buy's gross margins historically consistent (not fluctuating more than roughly 2% each year)? If gross margins are not a relevant metric for a company like this, then please state that and explain why.",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "Best Buy",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_bestbuy_2023_10k_p39_add656db07c1"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_bestbuy_2023_10k_p50_c4ce5b6bead8",
+            "fb_bestbuy_2023_10k_p39_add656db07c1",
+            "fb_bestbuy_2023_10k_p41_a13264b07d8a"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.3,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_bestbuy_2023_10k_p50_c4ce5b6bead8",
+            "fb_bestbuy_2023_10k_p39_add656db07c1",
+            "fb_bestbuy_2023_10k_p41_a13264b07d8a"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_bestbuy_2023_10k_p50_c4ce5b6bead8",
+          "score": 23.799558901717685,
+          "company": "Best Buy",
+          "fiscal_year": 2023,
+          "page": 50,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_bestbuy_2023_10k_p39_add656db07c1",
+          "score": 4.601523601468903,
+          "company": "Best Buy",
+          "fiscal_year": 2023,
+          "page": 39,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_bestbuy_2023_10k_p41_a13264b07d8a",
+          "score": 0.020336131992202282,
+          "company": "Best Buy",
+          "fiscal_year": 2023,
+          "page": 41,
+          "section": "Cash Flow Statement"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_01077",
+      "question": "What are major acquisitions that Best Buy has done in FY2023, FY2022 and FY2021?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "Best Buy",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_bestbuy_2023_10k_p50_c4ce5b6bead8"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_bestbuy_2023_10k_p50_c4ce5b6bead8",
+            "fb_bestbuy_2023_10k_p41_a13264b07d8a",
+            "fb_bestbuy_2023_10k_p39_add656db07c1"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.3,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_bestbuy_2023_10k_p50_c4ce5b6bead8",
+            "fb_bestbuy_2023_10k_p41_a13264b07d8a",
+            "fb_bestbuy_2023_10k_p39_add656db07c1"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_bestbuy_2023_10k_p50_c4ce5b6bead8",
+          "score": 10.451268191740507,
+          "company": "Best Buy",
+          "fiscal_year": 2023,
+          "page": 50,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_bestbuy_2023_10k_p41_a13264b07d8a",
+          "score": 1.8591075109416009,
+          "company": "Best Buy",
+          "fiscal_year": 2023,
+          "page": 41,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_bestbuy_2023_10k_p39_add656db07c1",
+          "score": 0.15214591089004875,
+          "company": "Best Buy",
+          "fiscal_year": 2023,
+          "page": 39,
+          "section": "FinanceBench Evidence Page"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_01275",
+      "question": "Among operations, investing, and financing activities, which brought in the most (or lost the least) cash flow for Best Buy in FY2023?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "Best Buy",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_bestbuy_2023_10k_p41_a13264b07d8a"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_bestbuy_2023_10k_p50_c4ce5b6bead8",
+            "fb_bestbuy_2023_10k_p41_a13264b07d8a",
+            "fb_bestbuy_2023_10k_p39_add656db07c1"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.3,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_bestbuy_2023_10k_p50_c4ce5b6bead8",
+            "fb_bestbuy_2023_10k_p41_a13264b07d8a",
+            "fb_bestbuy_2023_10k_p39_add656db07c1"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_bestbuy_2023_10k_p50_c4ce5b6bead8",
+          "score": 12.526187819539423,
+          "company": "Best Buy",
+          "fiscal_year": 2023,
+          "page": 50,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_bestbuy_2023_10k_p41_a13264b07d8a",
+          "score": 12.329527471902919,
+          "company": "Best Buy",
+          "fiscal_year": 2023,
+          "page": 41,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_bestbuy_2023_10k_p39_add656db07c1",
+          "score": 0.28485907204616334,
+          "company": "Best Buy",
+          "fiscal_year": 2023,
+          "page": 39,
+          "section": "FinanceBench Evidence Page"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00288",
+      "question": "Was there any drop in Cash & Cash equivalents between FY 2023 and Q2 of FY2024?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "novel-generated"
+      ],
+      "metadata_filters": {
+        "company": "Best Buy",
+        "fiscal_year": 2024,
+        "filing_type": "10-Q"
+      },
+      "gold_chunk_ids": [
+        "fb_bestbuy_2024q2_10q_p19_f232bae31acd"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_bestbuy_2024q2_10q_p19_f232bae31acd",
+            "fb_bestbuy_2024q2_10q_p17_9124783185d7",
+            "fb_bestbuy_2024q2_10q_p16_bf60df141b42"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.3,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_bestbuy_2024q2_10q_p19_f232bae31acd",
+            "fb_bestbuy_2024q2_10q_p17_9124783185d7",
+            "fb_bestbuy_2024q2_10q_p16_bf60df141b42"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_bestbuy_2024q2_10q_p19_f232bae31acd",
+          "score": 9.895799431055613,
+          "company": "Best Buy",
+          "fiscal_year": 2024,
+          "page": 19,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_bestbuy_2024q2_10q_p17_9124783185d7",
+          "score": 4.607450810953851,
+          "company": "Best Buy",
+          "fiscal_year": 2024,
+          "page": 17,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_bestbuy_2024q2_10q_p16_bf60df141b42",
+          "score": 3.986521728982904,
+          "company": "Best Buy",
+          "fiscal_year": 2024,
+          "page": 16,
+          "section": "Segment Information"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00460",
+      "question": "Was there any change in the number of Best Buy stores between Q2 of FY2024 and FY2023?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "novel-generated"
+      ],
+      "metadata_filters": {
+        "company": "Best Buy",
+        "fiscal_year": 2024,
+        "filing_type": "10-Q"
+      },
+      "gold_chunk_ids": [
+        "fb_bestbuy_2024q2_10q_p16_bf60df141b42"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_bestbuy_2024q2_10q_p16_bf60df141b42",
+            "fb_bestbuy_2024q2_10q_p17_9124783185d7",
+            "fb_bestbuy_2024q2_10q_p19_f232bae31acd"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.3,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_bestbuy_2024q2_10q_p16_bf60df141b42",
+            "fb_bestbuy_2024q2_10q_p17_9124783185d7",
+            "fb_bestbuy_2024q2_10q_p19_f232bae31acd"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_bestbuy_2024q2_10q_p16_bf60df141b42",
+          "score": 18.775072286748436,
+          "company": "Best Buy",
+          "fiscal_year": 2024,
+          "page": 16,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_bestbuy_2024q2_10q_p17_9124783185d7",
+          "score": 9.108077618422422,
+          "company": "Best Buy",
+          "fiscal_year": 2024,
+          "page": 17,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_bestbuy_2024q2_10q_p19_f232bae31acd",
+          "score": 4.869597865231921,
+          "company": "Best Buy",
+          "fiscal_year": 2024,
+          "page": 19,
+          "section": "Cash Flow Statement"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_01902",
+      "question": "Which Best Buy product category performed the best (by top line) in the domestic (USA) Market during Q2 of FY2024?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "novel-generated"
+      ],
+      "metadata_filters": {
+        "company": "Best Buy",
+        "fiscal_year": 2024,
+        "filing_type": "10-Q"
+      },
+      "gold_chunk_ids": [
+        "fb_bestbuy_2024q2_10q_p17_9124783185d7"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_bestbuy_2024q2_10q_p16_bf60df141b42",
+            "fb_bestbuy_2024q2_10q_p17_9124783185d7",
+            "fb_bestbuy_2024q2_10q_p19_f232bae31acd"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.3,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_bestbuy_2024q2_10q_p16_bf60df141b42",
+            "fb_bestbuy_2024q2_10q_p17_9124783185d7",
+            "fb_bestbuy_2024q2_10q_p19_f232bae31acd"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_bestbuy_2024q2_10q_p16_bf60df141b42",
+          "score": 17.62680093205576,
+          "company": "Best Buy",
+          "fiscal_year": 2024,
+          "page": 16,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_bestbuy_2024q2_10q_p17_9124783185d7",
+          "score": 15.422885221575589,
+          "company": "Best Buy",
+          "fiscal_year": 2024,
+          "page": 17,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_bestbuy_2024q2_10q_p19_f232bae31acd",
+          "score": 2.9835583889602137,
+          "company": "Best Buy",
+          "fiscal_year": 2024,
+          "page": 19,
+          "section": "Cash Flow Statement"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_10285",
+      "question": "We need to calculate a financial metric by using information only provided within the balance sheet. Please answer the following question: what is Boeing's year end FY2018 net property, plant, and equipment (in USD millions)?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "metrics-generated"
+      ],
+      "metadata_filters": {
+        "company": "Boeing",
+        "fiscal_year": 2018,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_boeing_2018_10k_p51_c5c749bd2251"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_boeing_2018_10k_p51_c5c749bd2251"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.1,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_boeing_2018_10k_p51_c5c749bd2251"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_boeing_2018_10k_p51_c5c749bd2251",
+          "score": 9.005181929628563,
+          "company": "Boeing",
+          "fiscal_year": 2018,
+          "page": 51,
+          "section": "Financial Statement Table"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00517",
+      "question": "Are there any product categories / service categories that represent more than 20% of Boeing's revenue for FY2022?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "Boeing",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_boeing_2022_10k_p61_194dd5afd34a"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_boeing_2022_10k_p9_f2030c42e586",
+            "fb_boeing_2022_10k_p13_7e0fc6fea66b",
+            "fb_boeing_2022_10k_p7_b348b26c1dfd",
+            "fb_boeing_2022_10k_p8_ee6858b4a555",
+            "fb_boeing_2022_10k_p112_03ae2163e180"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.7,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_boeing_2022_10k_p9_f2030c42e586",
+            "fb_boeing_2022_10k_p13_7e0fc6fea66b",
+            "fb_boeing_2022_10k_p7_b348b26c1dfd",
+            "fb_boeing_2022_10k_p8_ee6858b4a555",
+            "fb_boeing_2022_10k_p112_03ae2163e180",
+            "fb_boeing_2022_10k_p61_194dd5afd34a",
+            "fb_boeing_2022_10k_p54_bfefe7ea6c8d"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_boeing_2022_10k_p9_f2030c42e586",
+          "score": 12.314970038353254,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 9,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_boeing_2022_10k_p13_7e0fc6fea66b",
+          "score": 11.285711976049901,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 13,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_boeing_2022_10k_p7_b348b26c1dfd",
+          "score": 9.324704310930265,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 7,
+          "section": "Item 1A. Risk Factors"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_boeing_2022_10k_p8_ee6858b4a555",
+          "score": 9.178359557246782,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 8,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_boeing_2022_10k_p112_03ae2163e180",
+          "score": 8.5536695041319,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 112,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_boeing_2022_10k_p61_194dd5afd34a",
+          "score": 7.740067093797782,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 61,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "fb_boeing_2022_10k_p54_bfefe7ea6c8d",
+          "score": 4.381276645375174,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 54,
+          "section": "FinanceBench Evidence Page"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_01091",
+      "question": "Has Boeing reported any materially important ongoing legal battles from FY2022?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "Boeing",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_boeing_2022_10k_p112_03ae2163e180"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_boeing_2022_10k_p7_b348b26c1dfd",
+            "fb_boeing_2022_10k_p13_7e0fc6fea66b",
+            "fb_boeing_2022_10k_p8_ee6858b4a555",
+            "fb_boeing_2022_10k_p112_03ae2163e180",
+            "fb_boeing_2022_10k_p61_194dd5afd34a"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.7,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_boeing_2022_10k_p7_b348b26c1dfd",
+            "fb_boeing_2022_10k_p13_7e0fc6fea66b",
+            "fb_boeing_2022_10k_p8_ee6858b4a555",
+            "fb_boeing_2022_10k_p112_03ae2163e180",
+            "fb_boeing_2022_10k_p61_194dd5afd34a",
+            "fb_boeing_2022_10k_p54_bfefe7ea6c8d",
+            "fb_boeing_2022_10k_p9_f2030c42e586"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_boeing_2022_10k_p7_b348b26c1dfd",
+          "score": 11.739886120184856,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 7,
+          "section": "Item 1A. Risk Factors"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_boeing_2022_10k_p13_7e0fc6fea66b",
+          "score": 8.55475256921528,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 13,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_boeing_2022_10k_p8_ee6858b4a555",
+          "score": 7.978142875510069,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 8,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_boeing_2022_10k_p112_03ae2163e180",
+          "score": 7.708266348408871,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 112,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_boeing_2022_10k_p61_194dd5afd34a",
+          "score": 5.540299857507084,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 61,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_boeing_2022_10k_p54_bfefe7ea6c8d",
+          "score": 5.281465826038847,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 54,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "fb_boeing_2022_10k_p9_f2030c42e586",
+          "score": 5.016935131695019,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 9,
+          "section": "Cash Flow Statement"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00678",
+      "question": "Does Boeing have an improving gross margin profile as of FY2022? If gross margin is not a useful metric for a company like this, then state that and explain why.",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "Boeing",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_boeing_2022_10k_p54_bfefe7ea6c8d"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_boeing_2022_10k_p112_03ae2163e180",
+            "fb_boeing_2022_10k_p8_ee6858b4a555",
+            "fb_boeing_2022_10k_p7_b348b26c1dfd",
+            "fb_boeing_2022_10k_p9_f2030c42e586",
+            "fb_boeing_2022_10k_p13_7e0fc6fea66b"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.7,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_boeing_2022_10k_p112_03ae2163e180",
+            "fb_boeing_2022_10k_p8_ee6858b4a555",
+            "fb_boeing_2022_10k_p7_b348b26c1dfd",
+            "fb_boeing_2022_10k_p9_f2030c42e586",
+            "fb_boeing_2022_10k_p13_7e0fc6fea66b",
+            "fb_boeing_2022_10k_p61_194dd5afd34a",
+            "fb_boeing_2022_10k_p54_bfefe7ea6c8d"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_boeing_2022_10k_p112_03ae2163e180",
+          "score": 16.196803265799144,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 112,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_boeing_2022_10k_p8_ee6858b4a555",
+          "score": 15.44014003077307,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 8,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_boeing_2022_10k_p7_b348b26c1dfd",
+          "score": 14.256728160505258,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 7,
+          "section": "Item 1A. Risk Factors"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_boeing_2022_10k_p9_f2030c42e586",
+          "score": 12.632311985894397,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 9,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_boeing_2022_10k_p13_7e0fc6fea66b",
+          "score": 10.991996526929594,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 13,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_boeing_2022_10k_p61_194dd5afd34a",
+          "score": 9.054761328824656,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 61,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "fb_boeing_2022_10k_p54_bfefe7ea6c8d",
+          "score": 5.373655984204212,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 54,
+          "section": "FinanceBench Evidence Page"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_01290",
+      "question": "Who are the primary customers of Boeing as of FY2022?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "Boeing",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_boeing_2022_10k_p13_7e0fc6fea66b",
+        "fb_boeing_2022_10k_p7_b348b26c1dfd",
+        "fb_boeing_2022_10k_p9_f2030c42e586"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 3,
+          "required_gold_hits": 2,
+          "question_recall_pass": false,
+          "strict_precision": 0.4,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_boeing_2022_10k_p8_ee6858b4a555",
+            "fb_boeing_2022_10k_p9_f2030c42e586",
+            "fb_boeing_2022_10k_p112_03ae2163e180",
+            "fb_boeing_2022_10k_p7_b348b26c1dfd",
+            "fb_boeing_2022_10k_p61_194dd5afd34a"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 3,
+          "required_gold_hits": 3,
+          "question_recall_pass": true,
+          "strict_precision": 0.3,
+          "relaxed_precision": 0.7,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_boeing_2022_10k_p8_ee6858b4a555",
+            "fb_boeing_2022_10k_p9_f2030c42e586",
+            "fb_boeing_2022_10k_p112_03ae2163e180",
+            "fb_boeing_2022_10k_p7_b348b26c1dfd",
+            "fb_boeing_2022_10k_p61_194dd5afd34a",
+            "fb_boeing_2022_10k_p54_bfefe7ea6c8d",
+            "fb_boeing_2022_10k_p13_7e0fc6fea66b"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_boeing_2022_10k_p8_ee6858b4a555",
+          "score": 7.232625329200433,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 8,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_boeing_2022_10k_p9_f2030c42e586",
+          "score": 6.906651572237465,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 9,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_boeing_2022_10k_p112_03ae2163e180",
+          "score": 6.489858771817201,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 112,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_boeing_2022_10k_p7_b348b26c1dfd",
+          "score": 5.323596846493263,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 7,
+          "section": "Item 1A. Risk Factors"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_boeing_2022_10k_p61_194dd5afd34a",
+          "score": 5.143884141238816,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 61,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_boeing_2022_10k_p54_bfefe7ea6c8d",
+          "score": 4.810325497212999,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 54,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "fb_boeing_2022_10k_p13_7e0fc6fea66b",
+          "score": 2.8296227492882844,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 13,
+          "section": "Cash Flow Statement"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00464",
+      "question": "Is Boeing's business subject to cyclicality?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "novel-generated"
+      ],
+      "metadata_filters": {
+        "company": "Boeing",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_boeing_2022_10k_p7_b348b26c1dfd"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_boeing_2022_10k_p8_ee6858b4a555",
+            "fb_boeing_2022_10k_p61_194dd5afd34a",
+            "fb_boeing_2022_10k_p13_7e0fc6fea66b",
+            "fb_boeing_2022_10k_p9_f2030c42e586",
+            "fb_boeing_2022_10k_p54_bfefe7ea6c8d"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.7,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_boeing_2022_10k_p8_ee6858b4a555",
+            "fb_boeing_2022_10k_p61_194dd5afd34a",
+            "fb_boeing_2022_10k_p13_7e0fc6fea66b",
+            "fb_boeing_2022_10k_p9_f2030c42e586",
+            "fb_boeing_2022_10k_p54_bfefe7ea6c8d",
+            "fb_boeing_2022_10k_p7_b348b26c1dfd",
+            "fb_boeing_2022_10k_p112_03ae2163e180"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_boeing_2022_10k_p8_ee6858b4a555",
+          "score": 6.713526847993782,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 8,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_boeing_2022_10k_p61_194dd5afd34a",
+          "score": 6.704738051091021,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 61,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_boeing_2022_10k_p13_7e0fc6fea66b",
+          "score": 5.431112332347634,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 13,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_boeing_2022_10k_p9_f2030c42e586",
+          "score": 4.491935818257497,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 9,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_boeing_2022_10k_p54_bfefe7ea6c8d",
+          "score": 4.45163847623656,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 54,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_boeing_2022_10k_p7_b348b26c1dfd",
+          "score": 4.092319103432008,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 7,
+          "section": "Item 1A. Risk Factors"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "fb_boeing_2022_10k_p112_03ae2163e180",
+          "score": 2.3840107101411045,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 112,
+          "section": "Cash Flow Statement"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00494",
+      "question": "What production rate changes is Boeing forecasting for FY2023?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "novel-generated"
+      ],
+      "metadata_filters": {
+        "company": "Boeing",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_boeing_2022_10k_p8_ee6858b4a555"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_boeing_2022_10k_p8_ee6858b4a555",
+            "fb_boeing_2022_10k_p9_f2030c42e586",
+            "fb_boeing_2022_10k_p61_194dd5afd34a",
+            "fb_boeing_2022_10k_p54_bfefe7ea6c8d",
+            "fb_boeing_2022_10k_p112_03ae2163e180"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.7,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_boeing_2022_10k_p8_ee6858b4a555",
+            "fb_boeing_2022_10k_p9_f2030c42e586",
+            "fb_boeing_2022_10k_p61_194dd5afd34a",
+            "fb_boeing_2022_10k_p54_bfefe7ea6c8d",
+            "fb_boeing_2022_10k_p112_03ae2163e180",
+            "fb_boeing_2022_10k_p13_7e0fc6fea66b",
+            "fb_boeing_2022_10k_p7_b348b26c1dfd"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_boeing_2022_10k_p8_ee6858b4a555",
+          "score": 13.711438676424585,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 8,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_boeing_2022_10k_p9_f2030c42e586",
+          "score": 9.899300773110769,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 9,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_boeing_2022_10k_p61_194dd5afd34a",
+          "score": 6.0127016254377565,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 61,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_boeing_2022_10k_p54_bfefe7ea6c8d",
+          "score": 4.36113660028666,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 54,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_boeing_2022_10k_p112_03ae2163e180",
+          "score": 4.262766561299082,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 112,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_boeing_2022_10k_p13_7e0fc6fea66b",
+          "score": 3.2324126045038692,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 13,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "fb_boeing_2022_10k_p7_b348b26c1dfd",
+          "score": 3.1949580861237727,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 7,
+          "section": "Item 1A. Risk Factors"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00585",
+      "question": "How does Boeing's effective tax rate in FY2022 compare to FY2021?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "novel-generated"
+      ],
+      "metadata_filters": {
+        "company": "Boeing",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_boeing_2022_10k_p54_bfefe7ea6c8d"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_boeing_2022_10k_p8_ee6858b4a555",
+            "fb_boeing_2022_10k_p61_194dd5afd34a",
+            "fb_boeing_2022_10k_p54_bfefe7ea6c8d",
+            "fb_boeing_2022_10k_p9_f2030c42e586",
+            "fb_boeing_2022_10k_p7_b348b26c1dfd"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.7,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_boeing_2022_10k_p8_ee6858b4a555",
+            "fb_boeing_2022_10k_p61_194dd5afd34a",
+            "fb_boeing_2022_10k_p54_bfefe7ea6c8d",
+            "fb_boeing_2022_10k_p9_f2030c42e586",
+            "fb_boeing_2022_10k_p7_b348b26c1dfd",
+            "fb_boeing_2022_10k_p112_03ae2163e180",
+            "fb_boeing_2022_10k_p13_7e0fc6fea66b"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_boeing_2022_10k_p8_ee6858b4a555",
+          "score": 7.516688634717113,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 8,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_boeing_2022_10k_p61_194dd5afd34a",
+          "score": 6.186259618488715,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 61,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_boeing_2022_10k_p54_bfefe7ea6c8d",
+          "score": 5.9273363611152,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 54,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_boeing_2022_10k_p9_f2030c42e586",
+          "score": 2.215633026006936,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 9,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_boeing_2022_10k_p7_b348b26c1dfd",
+          "score": 0.260378609350409,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 7,
+          "section": "Item 1A. Risk Factors"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_boeing_2022_10k_p112_03ae2163e180",
+          "score": 0.25495161580930226,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 112,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "fb_boeing_2022_10k_p13_7e0fc6fea66b",
+          "score": 0.24909303374397673,
+          "company": "Boeing",
+          "fiscal_year": 2022,
+          "page": 13,
+          "section": "Cash Flow Statement"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_04980",
+      "question": "What is the FY2021 capital expenditure amount (in USD billions) for PepsiCo? Respond to the question by assuming the perspective of an investment analyst who can only use the details shown within the statement of cash flows.",
+      "expected_behavior": "answer",
+      "question_type": [
+        "metrics-generated"
+      ],
+      "metadata_filters": {
+        "company": "PepsiCo",
+        "fiscal_year": 2021,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_pepsico_2021_10k_p62_9e69bc818ce8"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pepsico_2021_10k_p62_9e69bc818ce8"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.1,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pepsico_2021_10k_p62_9e69bc818ce8"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_pepsico_2021_10k_p62_9e69bc818ce8",
+          "score": 10.122201792178846,
+          "company": "PepsiCo",
+          "fiscal_year": 2021,
+          "page": 62,
+          "section": "Cash Flow Statement"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_01009",
+      "question": "What are the geographies that Pepsico primarily operates in as of FY2022?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "PepsiCo",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+        "fb_pepsico_2022_10k_p4_9559b135fb51"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 2,
+          "required_gold_hits": 2,
+          "question_recall_pass": true,
+          "strict_precision": 0.4,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+            "fb_pepsico_2022_10k_p4_9559b135fb51",
+            "fb_pepsico_2022_10k_p77_043d60152b9a",
+            "fb_pepsico_2022_10k_p25_c3999cba64fc",
+            "fb_pepsico_2022_10k_p61_a5ff597a8b22"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 2,
+          "required_gold_hits": 2,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+            "fb_pepsico_2022_10k_p4_9559b135fb51",
+            "fb_pepsico_2022_10k_p77_043d60152b9a",
+            "fb_pepsico_2022_10k_p25_c3999cba64fc",
+            "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+            "fb_pepsico_2022_10k_p63_f9b69c481a33"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+          "score": 11.879804133994343,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 3,
+          "section": "Item 7. Management Discussion and Analysis"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_pepsico_2022_10k_p4_9559b135fb51",
+          "score": 7.951054576350431,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 4,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_pepsico_2022_10k_p77_043d60152b9a",
+          "score": 6.574340606994274,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 77,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_pepsico_2022_10k_p25_c3999cba64fc",
+          "score": 4.598769673890206,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 25,
+          "section": "Item 1A. Risk Factors"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+          "score": 4.577362132095718,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 61,
+          "section": "Financial Statement Table"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_pepsico_2022_10k_p63_f9b69c481a33",
+          "score": 3.036410830900468,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 63,
+          "section": "Cash Flow Statement"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00735",
+      "question": "Has Pepsico reported any materially important ongoing legal battles from FY2022 and FY2021?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "PepsiCo",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_pepsico_2022_10k_p25_c3999cba64fc"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+            "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+            "fb_pepsico_2022_10k_p25_c3999cba64fc",
+            "fb_pepsico_2022_10k_p4_9559b135fb51",
+            "fb_pepsico_2022_10k_p77_043d60152b9a"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+            "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+            "fb_pepsico_2022_10k_p25_c3999cba64fc",
+            "fb_pepsico_2022_10k_p4_9559b135fb51",
+            "fb_pepsico_2022_10k_p77_043d60152b9a",
+            "fb_pepsico_2022_10k_p63_f9b69c481a33"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+          "score": 11.472437469253794,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 3,
+          "section": "Item 7. Management Discussion and Analysis"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+          "score": 4.079706694596527,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 61,
+          "section": "Financial Statement Table"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_pepsico_2022_10k_p25_c3999cba64fc",
+          "score": 3.6756997573457286,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 25,
+          "section": "Item 1A. Risk Factors"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_pepsico_2022_10k_p4_9559b135fb51",
+          "score": 3.5823455758960088,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 4,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_pepsico_2022_10k_p77_043d60152b9a",
+          "score": 2.760828063736864,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 77,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_pepsico_2022_10k_p63_f9b69c481a33",
+          "score": 2.447443107080317,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 63,
+          "section": "Cash Flow Statement"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_01328",
+      "question": "What is the quantity of restructuring costs directly outlined in Pepsico's income statements for FY2022? If restructuring costs are not explicitly outlined then state 0.",
+      "expected_behavior": "answer",
+      "question_type": [
+        "domain-relevant"
+      ],
+      "metadata_filters": {
+        "company": "PepsiCo",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_pepsico_2022_10k_p77_043d60152b9a"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pepsico_2022_10k_p77_043d60152b9a",
+            "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+            "fb_pepsico_2022_10k_p4_9559b135fb51",
+            "fb_pepsico_2022_10k_p63_f9b69c481a33",
+            "fb_pepsico_2022_10k_p61_a5ff597a8b22"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pepsico_2022_10k_p77_043d60152b9a",
+            "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+            "fb_pepsico_2022_10k_p4_9559b135fb51",
+            "fb_pepsico_2022_10k_p63_f9b69c481a33",
+            "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+            "fb_pepsico_2022_10k_p25_c3999cba64fc"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_pepsico_2022_10k_p77_043d60152b9a",
+          "score": 13.326868009718204,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 77,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+          "score": 12.868215486037554,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 3,
+          "section": "Item 7. Management Discussion and Analysis"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_pepsico_2022_10k_p4_9559b135fb51",
+          "score": 8.012241623907444,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 4,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_pepsico_2022_10k_p63_f9b69c481a33",
+          "score": 7.455582855929441,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 63,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+          "score": 5.842739936132852,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 61,
+          "section": "Financial Statement Table"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_pepsico_2022_10k_p25_c3999cba64fc",
+          "score": 4.994485550565444,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 25,
+          "section": "Item 1A. Risk Factors"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_03620",
+      "question": "What is the FY2022 unadjusted EBITDA less capex for PepsiCo? Define unadjusted EBITDA as unadjusted operating income + depreciation and amortization [from cash flow statement]. Answer in USD millions. Respond to the question by assuming the perspective of an investment analyst who can only use the details shown within the statement of cash flows and the income statement.",
+      "expected_behavior": "answer",
+      "question_type": [
+        "metrics-generated"
+      ],
+      "metadata_filters": {
+        "company": "PepsiCo",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+        "fb_pepsico_2022_10k_p63_f9b69c481a33"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 2,
+          "required_gold_hits": 2,
+          "question_recall_pass": true,
+          "strict_precision": 0.4,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+            "fb_pepsico_2022_10k_p63_f9b69c481a33",
+            "fb_pepsico_2022_10k_p77_043d60152b9a",
+            "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+            "fb_pepsico_2022_10k_p4_9559b135fb51"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 2,
+          "required_gold_hits": 2,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+            "fb_pepsico_2022_10k_p63_f9b69c481a33",
+            "fb_pepsico_2022_10k_p77_043d60152b9a",
+            "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+            "fb_pepsico_2022_10k_p4_9559b135fb51",
+            "fb_pepsico_2022_10k_p25_c3999cba64fc"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+          "score": 24.57879312043666,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 3,
+          "section": "Item 7. Management Discussion and Analysis"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_pepsico_2022_10k_p63_f9b69c481a33",
+          "score": 21.444223671489564,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 63,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_pepsico_2022_10k_p77_043d60152b9a",
+          "score": 16.834870910585696,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 77,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+          "score": 14.846378335332236,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 61,
+          "section": "Financial Statement Table"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_pepsico_2022_10k_p4_9559b135fb51",
+          "score": 14.218791633863198,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 4,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_pepsico_2022_10k_p25_c3999cba64fc",
+          "score": 7.984613762061015,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 25,
+          "section": "Item 1A. Risk Factors"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_04481",
+      "question": "What is the FY2022 unadjusted EBITDA % margin for PepsiCo? Calculate unadjusted EBITDA using unadjusted operating income and D&A (from cash flow statement). Give a response to the question by relying on the details shown in the statement of cash flows and the P&L statement.",
+      "expected_behavior": "answer",
+      "question_type": [
+        "metrics-generated"
+      ],
+      "metadata_filters": {
+        "company": "PepsiCo",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+        "fb_pepsico_2022_10k_p63_f9b69c481a33"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 2,
+          "required_gold_hits": 2,
+          "question_recall_pass": true,
+          "strict_precision": 0.4,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+            "fb_pepsico_2022_10k_p77_043d60152b9a",
+            "fb_pepsico_2022_10k_p63_f9b69c481a33",
+            "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+            "fb_pepsico_2022_10k_p4_9559b135fb51"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 2,
+          "required_gold_hits": 2,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+            "fb_pepsico_2022_10k_p77_043d60152b9a",
+            "fb_pepsico_2022_10k_p63_f9b69c481a33",
+            "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+            "fb_pepsico_2022_10k_p4_9559b135fb51",
+            "fb_pepsico_2022_10k_p25_c3999cba64fc"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+          "score": 21.333709697974534,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 3,
+          "section": "Item 7. Management Discussion and Analysis"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_pepsico_2022_10k_p77_043d60152b9a",
+          "score": 20.429086392194368,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 77,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_pepsico_2022_10k_p63_f9b69c481a33",
+          "score": 15.163593029093317,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 63,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+          "score": 11.894644144940823,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 61,
+          "section": "Financial Statement Table"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_pepsico_2022_10k_p4_9559b135fb51",
+          "score": 11.35672700832957,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 4,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_pepsico_2022_10k_p25_c3999cba64fc",
+          "score": 9.293534733986721,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 25,
+          "section": "Item 1A. Risk Factors"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00302",
+      "question": "Did Pfizer grow its PPNE between FY20 and FY21?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "novel-generated"
+      ],
+      "metadata_filters": {
+        "company": "Pfizer",
+        "fiscal_year": 2021,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_pfizer_2021_10k_p58_c117a840c854"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.8,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pfizer_2021_10k_p70_b484602a0f9c",
+            "fb_pfizer_2021_10k_p56_0ca4fa3975f0",
+            "fb_pfizer_2021_10k_p58_c117a840c854",
+            "fb_pfizer_2021_10k_p69_956d8ec4ea91"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pfizer_2021_10k_p70_b484602a0f9c",
+            "fb_pfizer_2021_10k_p56_0ca4fa3975f0",
+            "fb_pfizer_2021_10k_p58_c117a840c854",
+            "fb_pfizer_2021_10k_p69_956d8ec4ea91"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_pfizer_2021_10k_p70_b484602a0f9c",
+          "score": 6.380785476375139,
+          "company": "Pfizer",
+          "fiscal_year": 2021,
+          "page": 70,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_pfizer_2021_10k_p56_0ca4fa3975f0",
+          "score": 4.579247032987435,
+          "company": "Pfizer",
+          "fiscal_year": 2021,
+          "page": 56,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_pfizer_2021_10k_p58_c117a840c854",
+          "score": 3.746774190933547,
+          "company": "Pfizer",
+          "fiscal_year": 2021,
+          "page": 58,
+          "section": "Balance Sheet"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_pfizer_2021_10k_p69_956d8ec4ea91",
+          "score": 2.8152842530383237,
+          "company": "Pfizer",
+          "fiscal_year": 2021,
+          "page": 69,
+          "section": "Balance Sheet"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00702",
+      "question": "Were there any potential events that are not in Pfizer's standard business operations that substantially increased net income in 2019?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "novel-generated"
+      ],
+      "metadata_filters": {
+        "company": "Pfizer",
+        "fiscal_year": 2021,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_pfizer_2021_10k_p56_0ca4fa3975f0"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.8,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pfizer_2021_10k_p69_956d8ec4ea91",
+            "fb_pfizer_2021_10k_p70_b484602a0f9c",
+            "fb_pfizer_2021_10k_p56_0ca4fa3975f0",
+            "fb_pfizer_2021_10k_p58_c117a840c854"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pfizer_2021_10k_p69_956d8ec4ea91",
+            "fb_pfizer_2021_10k_p70_b484602a0f9c",
+            "fb_pfizer_2021_10k_p56_0ca4fa3975f0",
+            "fb_pfizer_2021_10k_p58_c117a840c854"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_pfizer_2021_10k_p69_956d8ec4ea91",
+          "score": 23.617569519066677,
+          "company": "Pfizer",
+          "fiscal_year": 2021,
+          "page": 69,
+          "section": "Balance Sheet"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_pfizer_2021_10k_p70_b484602a0f9c",
+          "score": 19.56189208140068,
+          "company": "Pfizer",
+          "fiscal_year": 2021,
+          "page": 70,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_pfizer_2021_10k_p56_0ca4fa3975f0",
+          "score": 10.15136358345633,
+          "company": "Pfizer",
+          "fiscal_year": 2021,
+          "page": 56,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_pfizer_2021_10k_p58_c117a840c854",
+          "score": 4.1594104872676025,
+          "company": "Pfizer",
+          "fiscal_year": 2021,
+          "page": 58,
+          "section": "Balance Sheet"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_02416",
+      "question": "What are three main companies acquired by Pfizer mentioned in this 10K report?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "novel-generated"
+      ],
+      "metadata_filters": {
+        "company": "Pfizer",
+        "fiscal_year": 2021,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "fb_pfizer_2021_10k_p69_956d8ec4ea91",
+        "fb_pfizer_2021_10k_p70_b484602a0f9c"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 2,
+          "required_gold_hits": 2,
+          "question_recall_pass": true,
+          "strict_precision": 0.4,
+          "relaxed_precision": 0.8,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pfizer_2021_10k_p70_b484602a0f9c",
+            "fb_pfizer_2021_10k_p69_956d8ec4ea91",
+            "fb_pfizer_2021_10k_p56_0ca4fa3975f0",
+            "fb_pfizer_2021_10k_p58_c117a840c854"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 2,
+          "required_gold_hits": 2,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pfizer_2021_10k_p70_b484602a0f9c",
+            "fb_pfizer_2021_10k_p69_956d8ec4ea91",
+            "fb_pfizer_2021_10k_p56_0ca4fa3975f0",
+            "fb_pfizer_2021_10k_p58_c117a840c854"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_pfizer_2021_10k_p70_b484602a0f9c",
+          "score": 9.87985568695319,
+          "company": "Pfizer",
+          "fiscal_year": 2021,
+          "page": 70,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_pfizer_2021_10k_p69_956d8ec4ea91",
+          "score": 9.172649085446443,
+          "company": "Pfizer",
+          "fiscal_year": 2021,
+          "page": 69,
+          "section": "Balance Sheet"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_pfizer_2021_10k_p56_0ca4fa3975f0",
+          "score": 6.814630816881792,
+          "company": "Pfizer",
+          "fiscal_year": 2021,
+          "page": 56,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_pfizer_2021_10k_p58_c117a840c854",
+          "score": 5.770547550404926,
+          "company": "Pfizer",
+          "fiscal_year": 2021,
+          "page": 58,
+          "section": "Balance Sheet"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00283",
+      "question": "How much does Pfizer expect to pay to spin off Upjohn in the future in USD million?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "novel-generated"
+      ],
+      "metadata_filters": {
+        "company": "Pfizer",
+        "fiscal_year": 2023,
+        "filing_type": "10-Q"
+      },
+      "gold_chunk_ids": [
+        "fb_pfizer_2023q2_10q_p40_c5a54993ae78"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pfizer_2023q2_10q_p40_c5a54993ae78",
+            "fb_pfizer_2023q2_10q_p37_238ce8861d8a"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pfizer_2023q2_10q_p40_c5a54993ae78",
+            "fb_pfizer_2023q2_10q_p37_238ce8861d8a"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_pfizer_2023q2_10q_p40_c5a54993ae78",
+          "score": 14.56411313537691,
+          "company": "Pfizer",
+          "fiscal_year": 2023,
+          "page": 40,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_pfizer_2023q2_10q_p37_238ce8861d8a",
+          "score": 9.558506669336003,
+          "company": "Pfizer",
+          "fiscal_year": 2023,
+          "page": 37,
+          "section": "Income Statement"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_00724",
+      "question": "For Pfizer, which geographic region had the biggest drop in Q22023 year over year revenues (on a percentage basis)?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "novel-generated"
+      ],
+      "metadata_filters": {
+        "company": "Pfizer",
+        "fiscal_year": 2023,
+        "filing_type": "10-Q"
+      },
+      "gold_chunk_ids": [
+        "fb_pfizer_2023q2_10q_p37_238ce8861d8a"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pfizer_2023q2_10q_p37_238ce8861d8a",
+            "fb_pfizer_2023q2_10q_p40_c5a54993ae78"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pfizer_2023q2_10q_p37_238ce8861d8a",
+            "fb_pfizer_2023q2_10q_p40_c5a54993ae78"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_pfizer_2023q2_10q_p37_238ce8861d8a",
+          "score": 13.296959570926793,
+          "company": "Pfizer",
+          "fiscal_year": 2023,
+          "page": 37,
+          "section": "Income Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_pfizer_2023q2_10q_p40_c5a54993ae78",
+          "score": 6.426594088096815,
+          "company": "Pfizer",
+          "fiscal_year": 2023,
+          "page": 40,
+          "section": "Cash Flow Statement"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "financebench_id_02419",
+      "question": "As of Q2'2023, is Pfizer spinning off any large business segments?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "novel-generated"
+      ],
+      "metadata_filters": {
+        "company": "Pfizer",
+        "fiscal_year": 2023,
+        "filing_type": "10-Q"
+      },
+      "gold_chunk_ids": [
+        "fb_pfizer_2023q2_10q_p40_c5a54993ae78"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pfizer_2023q2_10q_p40_c5a54993ae78",
+            "fb_pfizer_2023q2_10q_p37_238ce8861d8a"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "fb_pfizer_2023q2_10q_p40_c5a54993ae78",
+            "fb_pfizer_2023q2_10q_p37_238ce8861d8a"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_pfizer_2023q2_10q_p40_c5a54993ae78",
+          "score": 9.925413030638246,
+          "company": "Pfizer",
+          "fiscal_year": 2023,
+          "page": 40,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_pfizer_2023q2_10q_p37_238ce8861d8a",
+          "score": 8.706548209775555,
+          "company": "Pfizer",
+          "fiscal_year": 2023,
+          "page": 37,
+          "section": "Income Statement"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "unanswerable_3m_2022_wacc",
+      "question": "What WACC did 3M disclose in its FY2022 10-K?",
+      "expected_behavior": "refuse",
+      "question_type": [
+        "valuation",
+        "unanswerable"
+      ],
+      "metadata_filters": {
+        "company": "3M",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_3m_2022_10k_p26_214910c54a40",
+            "fb_3m_2022_10k_p47_670b66e4f791",
+            "fb_3m_2022_10k_p49_0fcdc5102f07",
+            "fb_3m_2022_10k_p51_01d9404bd8c1",
+            "fb_3m_2022_10k_p24_71b863b13d1d"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 0.5,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_3m_2022_10k_p26_214910c54a40",
+            "fb_3m_2022_10k_p47_670b66e4f791",
+            "fb_3m_2022_10k_p49_0fcdc5102f07",
+            "fb_3m_2022_10k_p51_01d9404bd8c1",
+            "fb_3m_2022_10k_p24_71b863b13d1d"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_3m_2022_10k_p26_214910c54a40",
+          "score": 5.2650780449720225,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 26,
+          "section": "Item 7. Management Discussion and Analysis"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_3m_2022_10k_p47_670b66e4f791",
+          "score": 3.7466290619516456,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 47,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_3m_2022_10k_p49_0fcdc5102f07",
+          "score": 3.1901664523759448,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 49,
+          "section": "Balance Sheet"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_3m_2022_10k_p51_01d9404bd8c1",
+          "score": 1.9476828939221944,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 51,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_3m_2022_10k_p24_71b863b13d1d",
+          "score": 0.11366267876659639,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 24,
+          "section": "Segment Information"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "unanswerable_3m_2022_market_price",
+      "question": "What was the latest market price for 3M?",
+      "expected_behavior": "refuse",
+      "question_type": [
+        "market_data",
+        "unanswerable"
+      ],
+      "metadata_filters": {
+        "company": "3M",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_3m_2022_10k_p26_214910c54a40",
+            "fb_3m_2022_10k_p47_670b66e4f791",
+            "fb_3m_2022_10k_p49_0fcdc5102f07",
+            "fb_3m_2022_10k_p51_01d9404bd8c1",
+            "fb_3m_2022_10k_p24_71b863b13d1d"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 0.5,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_3m_2022_10k_p26_214910c54a40",
+            "fb_3m_2022_10k_p47_670b66e4f791",
+            "fb_3m_2022_10k_p49_0fcdc5102f07",
+            "fb_3m_2022_10k_p51_01d9404bd8c1",
+            "fb_3m_2022_10k_p24_71b863b13d1d"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_3m_2022_10k_p26_214910c54a40",
+          "score": 5.877495627456675,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 26,
+          "section": "Item 7. Management Discussion and Analysis"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_3m_2022_10k_p47_670b66e4f791",
+          "score": 4.420052551698789,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 47,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_3m_2022_10k_p49_0fcdc5102f07",
+          "score": 3.3555403343959265,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 49,
+          "section": "Balance Sheet"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_3m_2022_10k_p51_01d9404bd8c1",
+          "score": 2.0615030463933484,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 51,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_3m_2022_10k_p24_71b863b13d1d",
+          "score": 0.9719766692234355,
+          "company": "3M",
+          "fiscal_year": 2022,
+          "page": 24,
+          "section": "Segment Information"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "unanswerable_amd_2022_wacc",
+      "question": "What WACC did AMD disclose in its FY2022 10-K?",
+      "expected_behavior": "refuse",
+      "question_type": [
+        "valuation",
+        "unanswerable"
+      ],
+      "metadata_filters": {
+        "company": "AMD",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_amd_2022_10k_p3_3840b3601192",
+            "fb_amd_2022_10k_p42_4251da19ff97",
+            "fb_amd_2022_10k_p47_6771d3ead6f2",
+            "fb_amd_2022_10k_p11_a49f188c20f9",
+            "fb_amd_2022_10k_p57_38b108954f1b"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_amd_2022_10k_p3_3840b3601192",
+            "fb_amd_2022_10k_p42_4251da19ff97",
+            "fb_amd_2022_10k_p47_6771d3ead6f2",
+            "fb_amd_2022_10k_p11_a49f188c20f9",
+            "fb_amd_2022_10k_p57_38b108954f1b",
+            "fb_amd_2022_10k_p55_24e47dcbde5d"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_amd_2022_10k_p3_3840b3601192",
+          "score": 8.855539980925442,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 3,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_amd_2022_10k_p42_4251da19ff97",
+          "score": 8.781911411752741,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 42,
+          "section": "Balance Sheet"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_amd_2022_10k_p47_6771d3ead6f2",
+          "score": 2.0401087462517804,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 47,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_amd_2022_10k_p11_a49f188c20f9",
+          "score": 0.14562925852613853,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 11,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_amd_2022_10k_p57_38b108954f1b",
+          "score": 0.13352612841928937,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 57,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_amd_2022_10k_p55_24e47dcbde5d",
+          "score": 0.081228662989534,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 55,
+          "section": "Balance Sheet"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "unanswerable_amd_2022_market_price",
+      "question": "What was the latest market price for AMD?",
+      "expected_behavior": "refuse",
+      "question_type": [
+        "market_data",
+        "unanswerable"
+      ],
+      "metadata_filters": {
+        "company": "AMD",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_amd_2022_10k_p42_4251da19ff97",
+            "fb_amd_2022_10k_p47_6771d3ead6f2",
+            "fb_amd_2022_10k_p11_a49f188c20f9",
+            "fb_amd_2022_10k_p3_3840b3601192",
+            "fb_amd_2022_10k_p57_38b108954f1b"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 0.5,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_amd_2022_10k_p42_4251da19ff97",
+            "fb_amd_2022_10k_p47_6771d3ead6f2",
+            "fb_amd_2022_10k_p11_a49f188c20f9",
+            "fb_amd_2022_10k_p3_3840b3601192",
+            "fb_amd_2022_10k_p57_38b108954f1b"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_amd_2022_10k_p42_4251da19ff97",
+          "score": 10.207193279351717,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 42,
+          "section": "Balance Sheet"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_amd_2022_10k_p47_6771d3ead6f2",
+          "score": 8.287550786955348,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 47,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_amd_2022_10k_p11_a49f188c20f9",
+          "score": 7.025335401791638,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 11,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_amd_2022_10k_p3_3840b3601192",
+          "score": 5.938248013329659,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 3,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_amd_2022_10k_p57_38b108954f1b",
+          "score": 0.3163867964460451,
+          "company": "AMD",
+          "fiscal_year": 2022,
+          "page": 57,
+          "section": "Cash Flow Statement"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "unanswerable_best_buy_2023_wacc",
+      "question": "What WACC did Best Buy disclose in its FY2023 10-K?",
+      "expected_behavior": "refuse",
+      "question_type": [
+        "valuation",
+        "unanswerable"
+      ],
+      "metadata_filters": {
+        "company": "Best Buy",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_bestbuy_2023_10k_p50_c4ce5b6bead8",
+            "fb_bestbuy_2023_10k_p41_a13264b07d8a",
+            "fb_bestbuy_2023_10k_p39_add656db07c1"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 0.3,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_bestbuy_2023_10k_p50_c4ce5b6bead8",
+            "fb_bestbuy_2023_10k_p41_a13264b07d8a",
+            "fb_bestbuy_2023_10k_p39_add656db07c1"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_bestbuy_2023_10k_p50_c4ce5b6bead8",
+          "score": 6.160395523928812,
+          "company": "Best Buy",
+          "fiscal_year": 2023,
+          "page": 50,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_bestbuy_2023_10k_p41_a13264b07d8a",
+          "score": 0.136230862537516,
+          "company": "Best Buy",
+          "fiscal_year": 2023,
+          "page": 41,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_bestbuy_2023_10k_p39_add656db07c1",
+          "score": 0.1327131611561146,
+          "company": "Best Buy",
+          "fiscal_year": 2023,
+          "page": 39,
+          "section": "FinanceBench Evidence Page"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "unanswerable_best_buy_2023_market_price",
+      "question": "What was the latest market price for Best Buy?",
+      "expected_behavior": "refuse",
+      "question_type": [
+        "market_data",
+        "unanswerable"
+      ],
+      "metadata_filters": {
+        "company": "Best Buy",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_bestbuy_2023_10k_p50_c4ce5b6bead8"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 0.1,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_bestbuy_2023_10k_p50_c4ce5b6bead8"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_bestbuy_2023_10k_p50_c4ce5b6bead8",
+          "score": 12.90438109318056,
+          "company": "Best Buy",
+          "fiscal_year": 2023,
+          "page": 50,
+          "section": "Segment Information"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "unanswerable_amcor_2023_wacc",
+      "question": "What WACC did Amcor disclose in its FY2023 10-K?",
+      "expected_behavior": "refuse",
+      "question_type": [
+        "valuation",
+        "unanswerable"
+      ],
+      "metadata_filters": {
+        "company": "Amcor",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 0.8,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_amcor_2023_10k_p51_452f00a718ea",
+            "fb_amcor_2023_10k_p49_c03da713f00e",
+            "fb_amcor_2023_10k_p4_04bf7c5785b1",
+            "fb_amcor_2023_10k_p63_8b8318fdfb48"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_amcor_2023_10k_p51_452f00a718ea",
+            "fb_amcor_2023_10k_p49_c03da713f00e",
+            "fb_amcor_2023_10k_p4_04bf7c5785b1",
+            "fb_amcor_2023_10k_p63_8b8318fdfb48"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_amcor_2023_10k_p51_452f00a718ea",
+          "score": 4.548425956701536,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 51,
+          "section": "Balance Sheet"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_amcor_2023_10k_p49_c03da713f00e",
+          "score": 4.457742501946403,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 49,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_amcor_2023_10k_p4_04bf7c5785b1",
+          "score": 3.532291297516225,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 4,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_amcor_2023_10k_p63_8b8318fdfb48",
+          "score": 2.5545307805516106,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 63,
+          "section": "Segment Information"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "unanswerable_amcor_2023_market_price",
+      "question": "What was the latest market price for Amcor?",
+      "expected_behavior": "refuse",
+      "question_type": [
+        "market_data",
+        "unanswerable"
+      ],
+      "metadata_filters": {
+        "company": "Amcor",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 0.8,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_amcor_2023_10k_p63_8b8318fdfb48",
+            "fb_amcor_2023_10k_p49_c03da713f00e",
+            "fb_amcor_2023_10k_p51_452f00a718ea",
+            "fb_amcor_2023_10k_p4_04bf7c5785b1"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_amcor_2023_10k_p63_8b8318fdfb48",
+            "fb_amcor_2023_10k_p49_c03da713f00e",
+            "fb_amcor_2023_10k_p51_452f00a718ea",
+            "fb_amcor_2023_10k_p4_04bf7c5785b1"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_amcor_2023_10k_p63_8b8318fdfb48",
+          "score": 7.122410576899292,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 63,
+          "section": "Segment Information"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_amcor_2023_10k_p49_c03da713f00e",
+          "score": 5.032365307822633,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 49,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_amcor_2023_10k_p51_452f00a718ea",
+          "score": 4.957965092911324,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 51,
+          "section": "Balance Sheet"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_amcor_2023_10k_p4_04bf7c5785b1",
+          "score": 4.5314978286576615,
+          "company": "Amcor",
+          "fiscal_year": 2023,
+          "page": 4,
+          "section": "FinanceBench Evidence Page"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "unanswerable_pepsico_2022_wacc",
+      "question": "What WACC did PepsiCo disclose in its FY2022 10-K?",
+      "expected_behavior": "refuse",
+      "question_type": [
+        "valuation",
+        "unanswerable"
+      ],
+      "metadata_filters": {
+        "company": "PepsiCo",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+            "fb_pepsico_2022_10k_p4_9559b135fb51",
+            "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+            "fb_pepsico_2022_10k_p63_f9b69c481a33",
+            "fb_pepsico_2022_10k_p77_043d60152b9a"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+            "fb_pepsico_2022_10k_p4_9559b135fb51",
+            "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+            "fb_pepsico_2022_10k_p63_f9b69c481a33",
+            "fb_pepsico_2022_10k_p77_043d60152b9a",
+            "fb_pepsico_2022_10k_p25_c3999cba64fc"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+          "score": 11.13285761231581,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 3,
+          "section": "Item 7. Management Discussion and Analysis"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_pepsico_2022_10k_p4_9559b135fb51",
+          "score": 4.487022652504714,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 4,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+          "score": 4.147158639125547,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 61,
+          "section": "Financial Statement Table"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_pepsico_2022_10k_p63_f9b69c481a33",
+          "score": 2.554859541255389,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 63,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_pepsico_2022_10k_p77_043d60152b9a",
+          "score": 2.313881557375028,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 77,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_pepsico_2022_10k_p25_c3999cba64fc",
+          "score": 0.13684893932308412,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 25,
+          "section": "Item 1A. Risk Factors"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "unanswerable_pepsico_2022_market_price",
+      "question": "What was the latest market price for PepsiCo?",
+      "expected_behavior": "refuse",
+      "question_type": [
+        "market_data",
+        "unanswerable"
+      ],
+      "metadata_filters": {
+        "company": "PepsiCo",
+        "fiscal_year": 2022,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 1.0,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+            "fb_pepsico_2022_10k_p77_043d60152b9a",
+            "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+            "fb_pepsico_2022_10k_p4_9559b135fb51",
+            "fb_pepsico_2022_10k_p63_f9b69c481a33"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 0.6,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+            "fb_pepsico_2022_10k_p77_043d60152b9a",
+            "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+            "fb_pepsico_2022_10k_p4_9559b135fb51",
+            "fb_pepsico_2022_10k_p63_f9b69c481a33",
+            "fb_pepsico_2022_10k_p25_c3999cba64fc"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb_pepsico_2022_10k_p3_b6e9af12eef5",
+          "score": 8.967757103172183,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 3,
+          "section": "Item 7. Management Discussion and Analysis"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fb_pepsico_2022_10k_p77_043d60152b9a",
+          "score": 4.971474423077365,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 77,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "fb_pepsico_2022_10k_p61_a5ff597a8b22",
+          "score": 4.847030131731533,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 61,
+          "section": "Financial Statement Table"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fb_pepsico_2022_10k_p4_9559b135fb51",
+          "score": 3.804219468242735,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 4,
+          "section": "FinanceBench Evidence Page"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "fb_pepsico_2022_10k_p63_f9b69c481a33",
+          "score": 3.403580988775638,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 63,
+          "section": "Cash Flow Statement"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "fb_pepsico_2022_10k_p25_c3999cba64fc",
+          "score": 0.7547340054178633,
+          "company": "PepsiCo",
+          "fiscal_year": 2022,
+          "page": 25,
+          "section": "Item 1A. Risk Factors"
+        }
+      ],
+      "failure_labels": []
+    }
+  ],
+  "config_snapshot": {
+    "benchmark_path": "data/benchmarks/financebench_week1.json",
+    "chunks_path": "data/processed/financebench_chunks.jsonl",
+    "index_path": "data/processed/bm25_financebench_index.json",
+    "run_dir": "runs",
+    "top_k": [
+      5,
+      10
+    ],
+    "retrieval_config_name": "bm25_financebench_real",
+    "dataset_version": "financebench_real_week1_v0",
+    "corpus_version": "financebench_evidence_pages_v0"
+  }
+}

@@ -1,0 +1,842 @@
+{
+  "summary": {
+    "run_id": "20260505T152036Z",
+    "run_date": "2026-05-05T15:20:36.735152+00:00",
+    "dataset_version": "sample_week1_v0",
+    "corpus_version": "sample_corpus_v0",
+    "benchmark_size": 12,
+    "answerable_questions": 10,
+    "unanswerable_questions": 2,
+    "retrieval_config": "bm25_sample",
+    "notes": "Week 1 evaluates retrieval only. Answer/citation/refusal metrics are not evaluated until Week 3-6.",
+    "evidence_level_retrieval_recall@5": 1.0,
+    "question_recall@5": 1.0,
+    "strict_precision@5": 0.19999999999999998,
+    "relaxed_precision@5": 0.30000000000000004,
+    "gold_page_hit@5": 1.0,
+    "evidence_level_retrieval_recall@10": 1.0,
+    "question_recall@10": 1.0,
+    "strict_precision@10": 0.09999999999999999,
+    "relaxed_precision@10": 0.15000000000000002,
+    "gold_page_hit@10": 1.0,
+    "wrong_company_rate": 0.0,
+    "wrong_year_rate": 0.0
+  },
+  "per_question": [
+    {
+      "question_id": "q001",
+      "question": "What risks did Sample Software Works disclose in FY2023?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "risk_factor"
+      ],
+      "metadata_filters": {
+        "company": "Sample Software Works",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "ssw_2023_10k_p12"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "ssw_2023_10k_p12",
+            "ssw_2023_10k_p35"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.1,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "ssw_2023_10k_p12",
+            "ssw_2023_10k_p35"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "ssw_2023_10k_p12",
+          "score": 6.834495003999859,
+          "company": "Sample Software Works",
+          "fiscal_year": 2023,
+          "page": 12,
+          "section": "Item 1A. Risk Factors"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "ssw_2023_10k_p35",
+          "score": 0.6894536787097146,
+          "company": "Sample Software Works",
+          "fiscal_year": 2023,
+          "page": 35,
+          "section": "Item 7. Management Discussion and Analysis"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "q002",
+      "question": "Why did Sample Software Works revenue increase in fiscal 2023?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "factual"
+      ],
+      "metadata_filters": {
+        "company": "Sample Software Works",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "ssw_2023_10k_p35"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "ssw_2023_10k_p12",
+            "ssw_2023_10k_p35"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "ssw_2023_10k_p12",
+            "ssw_2023_10k_p35"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "ssw_2023_10k_p12",
+          "score": 5.945439923054256,
+          "company": "Sample Software Works",
+          "fiscal_year": 2023,
+          "page": 12,
+          "section": "Item 1A. Risk Factors"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "ssw_2023_10k_p35",
+          "score": 4.903839796552309,
+          "company": "Sample Software Works",
+          "fiscal_year": 2023,
+          "page": 35,
+          "section": "Item 7. Management Discussion and Analysis"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "q003",
+      "question": "What supply chain related risk did North Lake Manufacturing disclose in FY2023?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "risk_factor"
+      ],
+      "metadata_filters": {
+        "company": "North Lake Manufacturing",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "nlm_2023_10k_p14"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "nlm_2023_10k_p14",
+            "nlm_2023_10k_p41"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.1,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "nlm_2023_10k_p14",
+            "nlm_2023_10k_p41"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "nlm_2023_10k_p14",
+          "score": 8.954742313214409,
+          "company": "North Lake Manufacturing",
+          "fiscal_year": 2023,
+          "page": 14,
+          "section": "Item 1A. Risk Factors"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "nlm_2023_10k_p41",
+          "score": 0.7282597019016311,
+          "company": "North Lake Manufacturing",
+          "fiscal_year": 2023,
+          "page": 41,
+          "section": "Item 7. Management Discussion and Analysis"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "q004",
+      "question": "Did North Lake Manufacturing gross margin improve or worsen in fiscal 2023?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "simple_comparison"
+      ],
+      "metadata_filters": {
+        "company": "North Lake Manufacturing",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "nlm_2023_10k_p41"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "nlm_2023_10k_p41",
+            "nlm_2023_10k_p14"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "nlm_2023_10k_p41",
+            "nlm_2023_10k_p14"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "nlm_2023_10k_p41",
+          "score": 6.371499151583001,
+          "company": "North Lake Manufacturing",
+          "fiscal_year": 2023,
+          "page": 41,
+          "section": "Item 7. Management Discussion and Analysis"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "nlm_2023_10k_p14",
+          "score": 5.3728453879286455,
+          "company": "North Lake Manufacturing",
+          "fiscal_year": 2023,
+          "page": 14,
+          "section": "Item 1A. Risk Factors"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "q005",
+      "question": "What risks did Harbor Health Clinics disclose in FY2023?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "risk_factor"
+      ],
+      "metadata_filters": {
+        "company": "Harbor Health Clinics",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "hhc_2023_10k_p10"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "hhc_2023_10k_p10",
+            "hhc_2023_10k_p29"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.1,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "hhc_2023_10k_p10",
+            "hhc_2023_10k_p29"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "hhc_2023_10k_p10",
+          "score": 6.834495003999859,
+          "company": "Harbor Health Clinics",
+          "fiscal_year": 2023,
+          "page": 10,
+          "section": "Item 1A. Risk Factors"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "hhc_2023_10k_p29",
+          "score": 0.7083255859736668,
+          "company": "Harbor Health Clinics",
+          "fiscal_year": 2023,
+          "page": 29,
+          "section": "Item 7. Management Discussion and Analysis"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "q006",
+      "question": "What happened to patient visits at Harbor Health Clinics in fiscal 2023?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "factual"
+      ],
+      "metadata_filters": {
+        "company": "Harbor Health Clinics",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "hhc_2023_10k_p29"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "hhc_2023_10k_p29",
+            "hhc_2023_10k_p10"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "hhc_2023_10k_p29",
+            "hhc_2023_10k_p10"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "hhc_2023_10k_p29",
+          "score": 6.588475746454668,
+          "company": "Harbor Health Clinics",
+          "fiscal_year": 2023,
+          "page": 29,
+          "section": "Item 7. Management Discussion and Analysis"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "hhc_2023_10k_p10",
+          "score": 5.945439923054256,
+          "company": "Harbor Health Clinics",
+          "fiscal_year": 2023,
+          "page": 10,
+          "section": "Item 1A. Risk Factors"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "q007",
+      "question": "What risks did Green Grid Foods disclose in FY2023?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "risk_factor"
+      ],
+      "metadata_filters": {
+        "company": "Green Grid Foods",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "ggf_2023_10k_p16"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "ggf_2023_10k_p16",
+            "ggf_2023_10k_p38"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.1,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "ggf_2023_10k_p16",
+            "ggf_2023_10k_p38"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "ggf_2023_10k_p16",
+          "score": 6.834495003999859,
+          "company": "Green Grid Foods",
+          "fiscal_year": 2023,
+          "page": 16,
+          "section": "Item 1A. Risk Factors"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "ggf_2023_10k_p38",
+          "score": 0.749348303308049,
+          "company": "Green Grid Foods",
+          "fiscal_year": 2023,
+          "page": 38,
+          "section": "Item 7. Management Discussion and Analysis"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "q008",
+      "question": "Did Green Grid Foods net sales increase or decrease in fiscal 2023?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "simple_comparison"
+      ],
+      "metadata_filters": {
+        "company": "Green Grid Foods",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "ggf_2023_10k_p38"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "ggf_2023_10k_p38",
+            "ggf_2023_10k_p16"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "ggf_2023_10k_p38",
+            "ggf_2023_10k_p16"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "ggf_2023_10k_p38",
+          "score": 6.556002022767837,
+          "company": "Green Grid Foods",
+          "fiscal_year": 2023,
+          "page": 38,
+          "section": "Item 7. Management Discussion and Analysis"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "ggf_2023_10k_p16",
+          "score": 5.945439923054256,
+          "company": "Green Grid Foods",
+          "fiscal_year": 2023,
+          "page": 16,
+          "section": "Item 1A. Risk Factors"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "q009",
+      "question": "What risks did Urban Transit Components disclose in FY2023?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "risk_factor"
+      ],
+      "metadata_filters": {
+        "company": "Urban Transit Components",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "utc_2023_10k_p13"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "utc_2023_10k_p13",
+            "utc_2023_10k_p34"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.1,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "utc_2023_10k_p13",
+            "utc_2023_10k_p34"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "utc_2023_10k_p13",
+          "score": 6.682473429536522,
+          "company": "Urban Transit Components",
+          "fiscal_year": 2023,
+          "page": 13,
+          "section": "Item 1A. Risk Factors"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "utc_2023_10k_p34",
+          "score": 2.0537284385010626,
+          "company": "Urban Transit Components",
+          "fiscal_year": 2023,
+          "page": 34,
+          "section": "Item 7. Management Discussion and Analysis"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "q010",
+      "question": "Why did Urban Transit Components backlog increase in fiscal 2023?",
+      "expected_behavior": "answer",
+      "question_type": [
+        "factual"
+      ],
+      "metadata_filters": {
+        "company": "Urban Transit Components",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [
+        "utc_2023_10k_p34"
+      ],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.2,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "utc_2023_10k_p13",
+            "utc_2023_10k_p34"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 1,
+          "required_gold_hits": 1,
+          "question_recall_pass": true,
+          "strict_precision": 0.1,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": true,
+          "complete_gold_page_hit": true,
+          "retrieved_chunk_ids": [
+            "utc_2023_10k_p13",
+            "utc_2023_10k_p34"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "utc_2023_10k_p13",
+          "score": 5.74337772489792,
+          "company": "Urban Transit Components",
+          "fiscal_year": 2023,
+          "page": 13,
+          "section": "Item 1A. Risk Factors"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "utc_2023_10k_p34",
+          "score": 5.244429508406045,
+          "company": "Urban Transit Components",
+          "fiscal_year": 2023,
+          "page": 34,
+          "section": "Item 7. Management Discussion and Analysis"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "q011",
+      "question": "What WACC did Sample Software Works disclose in its FY2023 10-K?",
+      "expected_behavior": "refuse",
+      "question_type": [
+        "valuation",
+        "unanswerable"
+      ],
+      "metadata_filters": {
+        "company": "Sample Software Works",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "ssw_2023_10k_p12",
+            "ssw_2023_10k_p35"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "ssw_2023_10k_p12",
+            "ssw_2023_10k_p35"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "ssw_2023_10k_p12",
+          "score": 5.945439923054256,
+          "company": "Sample Software Works",
+          "fiscal_year": 2023,
+          "page": 12,
+          "section": "Item 1A. Risk Factors"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "ssw_2023_10k_p35",
+          "score": 0.6894536787097146,
+          "company": "Sample Software Works",
+          "fiscal_year": 2023,
+          "page": 35,
+          "section": "Item 7. Management Discussion and Analysis"
+        }
+      ],
+      "failure_labels": []
+    },
+    {
+      "question_id": "q012",
+      "question": "What was the latest market price for Green Grid Foods?",
+      "expected_behavior": "refuse",
+      "question_type": [
+        "market_data",
+        "unanswerable"
+      ],
+      "metadata_filters": {
+        "company": "Green Grid Foods",
+        "fiscal_year": 2023,
+        "filing_type": "10-K"
+      },
+      "gold_chunk_ids": [],
+      "metrics_by_k": {
+        "5": {
+          "k": 5,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 0.4,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "ggf_2023_10k_p16",
+            "ggf_2023_10k_p38"
+          ]
+        },
+        "10": {
+          "k": 10,
+          "required_gold_count": 0,
+          "required_gold_hits": 0,
+          "question_recall_pass": false,
+          "strict_precision": 0.0,
+          "relaxed_precision": 0.2,
+          "gold_page_hit": false,
+          "complete_gold_page_hit": false,
+          "retrieved_chunk_ids": [
+            "ggf_2023_10k_p16",
+            "ggf_2023_10k_p38"
+          ]
+        }
+      },
+      "top_chunks": [
+        {
+          "rank": 1,
+          "chunk_id": "ggf_2023_10k_p16",
+          "score": 7.084470279021719,
+          "company": "Green Grid Foods",
+          "fiscal_year": 2023,
+          "page": 16,
+          "section": "Item 1A. Risk Factors"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "ggf_2023_10k_p38",
+          "score": 1.2379808695167596,
+          "company": "Green Grid Foods",
+          "fiscal_year": 2023,
+          "page": 38,
+          "section": "Item 7. Management Discussion and Analysis"
+        }
+      ],
+      "failure_labels": []
+    }
+  ],
+  "config_snapshot": {
+    "benchmark_path": "data/benchmarks/sample_week1.json",
+    "chunks_path": "data/processed/chunks.jsonl",
+    "index_path": "data/processed/bm25_index.json",
+    "run_dir": "runs",
+    "top_k": [
+      5,
+      10
+    ],
+    "retrieval_config_name": "bm25_sample",
+    "dataset_version": "sample_week1_v0",
+    "corpus_version": "sample_corpus_v0"
+  }
+}

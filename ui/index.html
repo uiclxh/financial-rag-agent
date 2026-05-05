@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Financial RAG Agent v1.0.0</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Financial RAG Agent</p>
+        <h1>Week 1 Retrieval Baseline</h1>
+      </div>
+      <div class="version">v1.0.0</div>
+    </header>
+
+    <main>
+      <section class="summary-grid" aria-label="Release summary">
+        <article>
+          <span>Run</span>
+          <strong id="run-id">-</strong>
+        </article>
+        <article>
+          <span>Benchmark</span>
+          <strong id="benchmark-size">-</strong>
+        </article>
+        <article>
+          <span>Chunks</span>
+          <strong id="chunk-count">-</strong>
+        </article>
+        <article>
+          <span>Missing Metadata</span>
+          <strong id="missing-metadata">-</strong>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Retrieval Metrics</h2>
+          <p>Real FinanceBench evidence pages with SEC metadata alignment.</p>
+        </div>
+        <div id="metrics" class="metric-grid"></div>
+      </section>
+
+      <section class="two-column">
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Completed Scope</h2>
+            <p>Implemented and validated in this release.</p>
+          </div>
+          <ul id="completed-list" class="check-list"></ul>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Not In Scope Yet</h2>
+            <p>Reserved for later protocol phases.</p>
+          </div>
+          <ul id="deferred-list" class="plain-list"></ul>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Companies</h2>
+          <p>Current cleaned real-data sample.</p>
+        </div>
+        <div id="companies" class="pill-row"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Next Fix Priority</h2>
+          <p>Follows the global protocol: retrieval before prompts.</p>
+        </div>
+        <ol id="next-steps" class="step-list"></ol>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
+

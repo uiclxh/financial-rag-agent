@@ -1,0 +1,41 @@
+{
+  "selected_companies": [
+    "3M",
+    "AMD",
+    "Best Buy",
+    "Amcor",
+    "PepsiCo",
+    "Boeing",
+    "Pfizer",
+    "Adobe"
+  ],
+  "configured_max_companies": 5,
+  "auto_extended_companies_to_hit_answerable_target": true,
+  "answerable_target": 50,
+  "answerable_questions": 50,
+  "unanswerable_questions": 10,
+  "chunk_count": 52,
+  "company_distribution": {
+    "3M": 8,
+    "Adobe": 2,
+    "Amcor": 6,
+    "AMD": 7,
+    "Best Buy": 8,
+    "Boeing": 7,
+    "PepsiCo": 6,
+    "Pfizer": 6
+  },
+  "section_distribution": {
+    "Cash Flow Statement": 17,
+    "Financial Statement Table": 3,
+    "FinanceBench Evidence Page": 9,
+    "Balance Sheet": 10,
+    "Item 7. Management Discussion and Analysis": 2,
+    "Segment Information": 8,
+    "Item 1A. Risk Factors": 2,
+    "Income Statement": 1
+  },
+  "sec_identity_missing_companies": [],
+  "filing_date_missing_chunks": 0,
+  "excluded_rows_missing_sec_filing_date": 5
+}
