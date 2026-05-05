@@ -27,6 +27,7 @@ Release notes:
 - [v1.0.0](docs/releases/1.0.0.md) records the completed Week 1 retrieval baseline.
 - Latest validated run: `20260505T154304Z`.
 - The release validates retrieval only; answer quality, citation faithfulness, and hallucination rate are later phases.
+- [Week 2 plan](docs/week2_plan.md) defines vector retrieval, hybrid retrieval, reranking, and comparison metrics.
 
 Real FinanceBench / SEC Week 1 run:
 
