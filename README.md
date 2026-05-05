@@ -22,6 +22,12 @@ python -m src.reports.build --run-id latest
 
 Week 1 intentionally does not implement answer generation, citation verification, vector retrieval, reranking, XBRL, valuation, or permissions.
 
+Release notes:
+
+- [v1.0.0](docs/releases/1.0.0.md) records the completed Week 1 retrieval baseline.
+- Latest validated run: `20260505T154304Z`.
+- The release validates retrieval only; answer quality, citation faithfulness, and hallucination rate are later phases.
+
 Real FinanceBench / SEC Week 1 run:
 
 ```bash
